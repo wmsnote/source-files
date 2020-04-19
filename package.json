@@ -20,5 +20,8 @@
   "homepage": "https://github.com/wmsnote/source-files#readme",
   "devDependencies": {
     "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
