@@ -21,7 +21,8 @@ module.exports = {
             collapsable: true,
             sidebarDepth: 1,
             children: [
-              ['shell/条件判断','条件判断']
+              ['shell/条件判断','条件判断'],
+              ['shell/循环','循环']
             ]
           },
           {
