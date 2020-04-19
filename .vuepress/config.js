@@ -5,6 +5,9 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
+    plugins: [
+      ['vuepress-plugin-code-copy', true]
+    ],
     themeConfig: {
         sidebarDepth: 5,
         lastUpdated: 'Last Updated',
