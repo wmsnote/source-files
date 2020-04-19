@@ -26,7 +26,7 @@ module.exports = {
             children: [
               ['shell/条件判断','条件判断'],
               ['shell/循环','循环'],
-              ['shell/函数', '函数']
+              ['shell/函数','函数']
             ]
           },
           {
