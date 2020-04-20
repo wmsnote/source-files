@@ -39,6 +39,7 @@ module.exports = {
               ['设计模式/IteratorDesignPattern','迭代器模式'],
               ['设计模式/StatePattern','状态机模式'],
               ['设计模式/StrategyDesignPattern','策略模式'],
+              ['设计模式/VisitorDesignPattern','访问者模式'],
             ]
           }
         ]
