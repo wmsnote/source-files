@@ -65,6 +65,16 @@ module.exports = {
             children: [
               ['travis-ci/travis.yml','配置文件详解']
             ]
+          },
+          {
+            title: 'Dockerfile',
+            path: '/Dockerfile/',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: [
+              ['Dockerfile/springboot','SpringBoot'],
+              ['Dockerfile/vue','Vue']
+            ]
           }
         ]
     }
