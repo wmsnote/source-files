@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. Dockerfile | wums</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="wums note">
+    <link rel="preload" href="/source-files/assets/css/0.styles.65bc254d.css" as="style"><link rel="preload" href="/source-files/assets/js/app.1a7deada.js" as="script"><link rel="preload" href="/source-files/assets/js/2.6ef31ef9.js" as="script"><link rel="preload" href="/source-files/assets/js/6.ea86a040.js" as="script"><link rel="prefetch" href="/source-files/assets/js/10.c68d946e.js"><link rel="prefetch" href="/source-files/assets/js/11.79dea162.js"><link rel="prefetch" href="/source-files/assets/js/12.5b6ccf68.js"><link rel="prefetch" href="/source-files/assets/js/13.a3dd280e.js"><link rel="prefetch" href="/source-files/assets/js/14.24d2e599.js"><link rel="prefetch" href="/source-files/assets/js/15.5c31d69b.js"><link rel="prefetch" href="/source-files/assets/js/16.b23a9c0a.js"><link rel="prefetch" href="/source-files/assets/js/17.12849284.js"><link rel="prefetch" href="/source-files/assets/js/18.6509edee.js"><link rel="prefetch" href="/source-files/assets/js/19.53d8ad6b.js"><link rel="prefetch" href="/source-files/assets/js/20.95539289.js"><link rel="prefetch" href="/source-files/assets/js/21.ccb4db6c.js"><link rel="prefetch" href="/source-files/assets/js/22.002e47a8.js"><link rel="prefetch" href="/source-files/assets/js/23.2a2b5477.js"><link rel="prefetch" href="/source-files/assets/js/24.81b9147d.js"><link rel="prefetch" href="/source-files/assets/js/25.ea207b92.js"><link rel="prefetch" href="/source-files/assets/js/26.878e0df5.js"><link rel="prefetch" href="/source-files/assets/js/3.835f4998.js"><link rel="prefetch" href="/source-files/assets/js/4.d76f0767.js"><link rel="prefetch" href="/source-files/assets/js/5.17e27241.js"><link rel="prefetch" href="/source-files/assets/js/7.e5cd0322.js"><link rel="prefetch" href="/source-files/assets/js/8.bef3d365.js"><link rel="prefetch" href="/source-files/assets/js/9.c02c9d17.js">
+    <link rel="stylesheet" href="/source-files/assets/css/0.styles.65bc254d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/source-files/" class="home-link router-link-active"><!----> <span class="site-name">wums</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/source-files/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://gitee.com/wmsnote/dashboard/wikis" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WiKi
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://gitee.com/wmsnote/source-files" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitEE
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/source-files/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://gitee.com/wmsnote/dashboard/wikis" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WiKi
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://gitee.com/wmsnote/source-files" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitEE
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/shell/" class="sidebar-heading clickable open"><span>shell</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/source-files/shell/条件判断.html" class="sidebar-link">条件判断</a></li><li><a href="/source-files/shell/循环.html" class="sidebar-link">循环</a></li><li><a href="/source-files/shell/函数.html" class="sidebar-link">函数</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/设计模式/" class="sidebar-heading clickable"><span>设计模式</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/prometheus/" class="sidebar-heading clickable"><span>prometheus</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/travis-ci/" class="sidebar-heading clickable"><span>travis-ci教程</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-dockerfile"><a href="#_1-dockerfile" class="header-anchor">#</a> 1. Dockerfile</h2> <div class="language-Dockerfile line-numbers-mode"><pre class="language-dockerfile"><code><span class="token comment">### 胖jar方式</span>
+<span class="token comment">## FROM openjdk:11.0.6-jre</span>
+<span class="token comment">#FROM openjdk:8-jdk-alpine</span>
+<span class="token comment">## RUN addgroup -S spring &amp;&amp; adduser -S spring -G spring</span>
+<span class="token comment">## USER spring:spring</span>
+<span class="token comment">#ARG JAR_FILE=build/libs/*.jar</span>
+<span class="token comment">#ENV PROFILE=default TZ=Asia/Shanghai JAVA_OPTS=</span><span class="token string">&quot;-server -Xms1g -Xmx1g&quot;</span>
+<span class="token comment">#RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &amp;&amp; echo $TZ &gt; /etc/timezone</span>
+<span class="token comment">#WORKDIR /</span>
+<span class="token comment">#ADD ${JAR_FILE} /app.jar</span>
+<span class="token comment">#VOLUME /logs</span>
+<span class="token comment">#EXPOSE 8080</span>
+<span class="token comment">#ENTRYPOINT java ${JAVA_OPTS} -Djava.security.egd=file:/dev/./urandom -Dfile.encoding=utf-8 -Dspring.profiles.active=${PROFILE} -jar /app.jar</span>
+<span class="token comment">#CMD []</span>
+
+<span class="token comment">### 分离依赖和资源</span>
+
+<span class="token keyword">FROM</span> openjdk<span class="token punctuation">:</span>8<span class="token punctuation">-</span>jdk<span class="token punctuation">-</span>alpine AS builder
+<span class="token keyword">WORKDIR</span> target/dependency
+<span class="token keyword">ARG</span> JAR_FILE=build/libs/*.jar
+<span class="token keyword">COPY</span> $<span class="token punctuation">{</span>JAR_FILE<span class="token punctuation">}</span> app.jar
+<span class="token keyword">RUN</span> jar <span class="token punctuation">-</span>xf ./app.jar
+
+<span class="token keyword">FROM</span> openjdk<span class="token punctuation">:</span>8<span class="token punctuation">-</span>jre<span class="token punctuation">-</span>alpine
+<span class="token keyword">ARG</span> DEPENDENCY=target/dependency
+<span class="token keyword">ENV</span> PROFILE=default
+<span class="token keyword">ENV</span> TZ=Asia/Shanghai
+<span class="token keyword">ENV</span> JAVA_OPTS=<span class="token string">&quot;-Xms1g -Xmx1g&quot;</span>
+<span class="token keyword">ENV</span> MAIN_CLASS=com.boe.admin.uiadmin.UiAdminApplication
+<span class="token keyword">RUN</span> ln <span class="token punctuation">-</span>snf /usr/share/zoneinfo/$TZ /etc/localtime &amp;&amp; echo $TZ <span class="token punctuation">&gt;</span> /etc/timezone
+<span class="token keyword">WORKDIR</span> /
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=builder $<span class="token punctuation">{</span>DEPENDENCY<span class="token punctuation">}</span>/BOOT<span class="token punctuation">-</span>INF/lib /app/lib
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=builder $<span class="token punctuation">{</span>DEPENDENCY<span class="token punctuation">}</span>/META<span class="token punctuation">-</span>INF /app/META<span class="token punctuation">-</span>INF
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=builder $<span class="token punctuation">{</span>DEPENDENCY<span class="token punctuation">}</span>/BOOT<span class="token punctuation">-</span>INF/classes /app
+<span class="token keyword">VOLUME</span> /app/logs
+<span class="token keyword">EXPOSE</span> 8080
+<span class="token keyword">ENTRYPOINT</span> java <span class="token punctuation">-</span>server $<span class="token punctuation">{</span>JAVA_OPTS<span class="token punctuation">}</span> <span class="token punctuation">-</span>Djava.security.egd=file<span class="token punctuation">:</span>/dev/./urandom <span class="token punctuation">-</span>Dfile.encoding=utf<span class="token punctuation">-</span>8 <span class="token punctuation">-</span>Dspring.profiles.active=$<span class="token punctuation">{</span>PROFILE<span class="token punctuation">}</span> <span class="token punctuation">-</span>cp app<span class="token punctuation">:</span>app/lib/* $<span class="token punctuation">{</span>MAIN_CLASS<span class="token punctuation">}</span>
+<span class="token keyword">CMD</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h2 id="_2-部署脚本"><a href="#_2-部署脚本" class="header-anchor">#</a> 2. 部署脚本</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token shebang important">#!/usr/bin/env bash</span>
+
+<span class="token builtin class-name">set</span> -u
+<span class="token builtin class-name">set</span> -e
+
+
+
+
+
+
+<span class="token comment">## =================================================================</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 开始打包&quot;</span><span class="token punctuation">;</span><span class="token function">sleep</span> <span class="token number">3</span>
+
+<span class="token comment"># mvn clean package -Dmaven.test.skip=true</span>
+gradle build
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 打包完成&quot;</span>
+
+
+<span class="token comment">## ===========================================================================</span>
+<span class="token assign-left variable">JAR_FILE</span><span class="token operator">=</span><span class="token string">&quot;build/libs/*.jar&quot;</span>
+<span class="token assign-left variable">IMAGE_NAME</span><span class="token operator">=</span><span class="token string">&quot;springboot-admin&quot;</span>
+<span class="token assign-left variable">IMAGE_ID</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%Y%m%d%H%M<span class="token variable">)</span></span>
+<span class="token assign-left variable">IMAGE_REGISTRY</span><span class="token operator">=</span><span class="token string">&quot;registry.cn-beijing.aliyuncs.com&quot;</span>
+<span class="token assign-left variable">IMAGE_NAMESPACE</span><span class="token operator">=</span><span class="token string">&quot;boe-com&quot;</span>
+<span class="token assign-left variable">IMAGE_FULLNAME</span><span class="token operator">=</span><span class="token variable">$IMAGE_REGISTRY</span>/<span class="token variable">$IMAGE_NAMESPACE</span>/<span class="token variable">$IMAGE_NAME</span><span class="token builtin class-name">:</span><span class="token variable">$IMAGE_ID</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;开始构建镜像: <span class="token variable">$IMAGE_FULLNAME</span>&quot;</span><span class="token punctuation">;</span> <span class="token function">sleep</span> <span class="token number">3</span>
+
+
+docker build -t <span class="token variable">$IMAGE_FULLNAME</span> --build-arg <span class="token assign-left variable">JAR_FILE</span><span class="token operator">=</span><span class="token variable">$JAR_FILE</span> <span class="token builtin class-name">.</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 镜像构建完成&quot;</span>
+
+<span class="token comment">## ============================================================================</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 推送镜像到远程仓库&quot;</span><span class="token punctuation">;</span> <span class="token function">sleep</span> <span class="token number">3</span>
+
+<span class="token assign-left variable">REGISTRY_USERNAME</span><span class="token operator">=</span><span class="token string">&quot;t_1516617822136_0451&quot;</span>
+<span class="token builtin class-name">read</span> -p <span class="token string">&quot;please input image registry password: &quot;</span> -t <span class="token number">60</span> REGISTRY_PASSWORD
+<span class="token comment"># docker login</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${REGISTRY_PASSWORD<span class="token operator">:-</span>&quot;woms0613&quot;}</span> <span class="token operator">|</span> docker login <span class="token variable">$IMAGE_REGISTRY</span> -u <span class="token variable">$REGISTRY_USERNAME</span> --password-stdin
+docker push <span class="token variable">$IMAGE_FULLNAME</span>
+
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 镜像推送完成 ================== &quot;</span><span class="token punctuation">;</span><span class="token function">sleep</span> <span class="token number">3</span>
+
+<span class="token comment">## =====================================================================</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ========================== 删除本地none镜像&quot;</span>
+
+docker rmi <span class="token variable"><span class="token variable">$(</span>docker images <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;none&quot;</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$3</span>}'</span><span class="token variable">)</span></span>
+docker rmi <span class="token variable">$IMAGE_FULLNAME</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ============================ 本地镜像删除完成&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><h2 id="_3-gradle构建"><a href="#_3-gradle构建" class="header-anchor">#</a> 3. gradle构建</h2> <div class="language-groovy line-numbers-mode"><pre class="language-groovy"><code>plugins <span class="token punctuation">{</span>
+    id <span class="token string">'org.springframework.boot'</span> version <span class="token string">'2.2.5.RELEASE'</span>
+    id <span class="token string">'io.spring.dependency-management'</span> version <span class="token string">'1.0.9.RELEASE'</span>
+    id <span class="token string">'java'</span>
+<span class="token punctuation">}</span>
+
+group <span class="token operator">=</span> <span class="token string">'com.boe.admin'</span>
+version <span class="token operator">=</span> <span class="token string">'0.0.1-SNAPSHOT'</span>
+sourceCompatibility <span class="token operator">=</span> <span class="token string">'1.8'</span>
+
+configurations <span class="token punctuation">{</span>
+    compileOnly <span class="token punctuation">{</span>
+        extendsFrom annotationProcessor
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+dependencyManagement <span class="token punctuation">{</span>
+  imports <span class="token punctuation">{</span>
+    mavenBom <span class="token string">'io.spring.platform:platform-bom:Cairo-SR8'</span>
+    mavenBom <span class="token string">'org.springframework:spring-framework-bom:5.2.4.RELEASE'</span>
+    mavenBom <span class="token string">'org.springframework.boot:spring-boot-dependencies:2.2.5.RELEASE'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+repositories <span class="token punctuation">{</span>
+    <span class="token function">mavenCentral</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+
+dependencies <span class="token punctuation">{</span>
+    implementation <span class="token string">'org.springframework.boot:spring-boot-starter-actuator'</span>
+    implementation <span class="token string">'org.springframework.boot:spring-boot-starter-web'</span>
+    implementation <span class="token string">'org.springframework.boot:spring-boot-starter-aop'</span>
+    implementation <span class="token string">'org.springframework.boot:spring-boot-starter-validation'</span>
+
+    implementation <span class="token string">'com.baomidou:mybatis-plus-boot-starter:3.3.0'</span>
+    runtimeOnly <span class="token string">'mysql:mysql-connector-java'</span>
+
+    implementation <span class="token string">'org.springframework.boot:spring-boot-configuration-processor'</span>
+
+    compileOnly <span class="token string">'org.projectlombok:lombok'</span>
+    annotationProcessor <span class="token string">'org.projectlombok:lombok'</span>
+
+    implementation <span class="token string">'org.springframework.boot:spring-boot-starter-cache'</span>
+    implementation <span class="token string">'net.sf.ehcache:ehcache'</span>
+
+    implementation <span class="token string">'org.springframework.boot:spring-boot-starter-security'</span>
+    implementation <span class="token string">'io.jsonwebtoken:jjwt:0.9.1'</span>
+
+    implementation <span class="token string">'org.apache.commons:commons-lang3'</span>
+    implementation <span class="token string">'commons-beanutils:commons-beanutils'</span>
+    implementation <span class="token string">'com.google.guava:guava'</span>
+    implementation <span class="token string">'com.alibaba:fastjson:1.2.45'</span>
+    implementation <span class="token string">'cn.miludeer:jsoncode:1.2.4'</span>
+
+<span class="token punctuation">}</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/20/2020, 3:20:54 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/source-files/assets/js/app.1a7deada.js" defer></script><script src="/source-files/assets/js/2.6ef31ef9.js" defer></script><script src="/source-files/assets/js/6.ea86a040.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. Dockerfile | wums</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="wums note">
+    <link rel="preload" href="/source-files/assets/css/0.styles.65bc254d.css" as="style"><link rel="preload" href="/source-files/assets/js/app.1a7deada.js" as="script"><link rel="preload" href="/source-files/assets/js/2.6ef31ef9.js" as="script"><link rel="preload" href="/source-files/assets/js/7.e5cd0322.js" as="script"><link rel="prefetch" href="/source-files/assets/js/10.c68d946e.js"><link rel="prefetch" href="/source-files/assets/js/11.79dea162.js"><link rel="prefetch" href="/source-files/assets/js/12.5b6ccf68.js"><link rel="prefetch" href="/source-files/assets/js/13.a3dd280e.js"><link rel="prefetch" href="/source-files/assets/js/14.24d2e599.js"><link rel="prefetch" href="/source-files/assets/js/15.5c31d69b.js"><link rel="prefetch" href="/source-files/assets/js/16.b23a9c0a.js"><link rel="prefetch" href="/source-files/assets/js/17.12849284.js"><link rel="prefetch" href="/source-files/assets/js/18.6509edee.js"><link rel="prefetch" href="/source-files/assets/js/19.53d8ad6b.js"><link rel="prefetch" href="/source-files/assets/js/20.95539289.js"><link rel="prefetch" href="/source-files/assets/js/21.ccb4db6c.js"><link rel="prefetch" href="/source-files/assets/js/22.002e47a8.js"><link rel="prefetch" href="/source-files/assets/js/23.2a2b5477.js"><link rel="prefetch" href="/source-files/assets/js/24.81b9147d.js"><link rel="prefetch" href="/source-files/assets/js/25.ea207b92.js"><link rel="prefetch" href="/source-files/assets/js/26.878e0df5.js"><link rel="prefetch" href="/source-files/assets/js/3.835f4998.js"><link rel="prefetch" href="/source-files/assets/js/4.d76f0767.js"><link rel="prefetch" href="/source-files/assets/js/5.17e27241.js"><link rel="prefetch" href="/source-files/assets/js/6.ea86a040.js"><link rel="prefetch" href="/source-files/assets/js/8.bef3d365.js"><link rel="prefetch" href="/source-files/assets/js/9.c02c9d17.js">
+    <link rel="stylesheet" href="/source-files/assets/css/0.styles.65bc254d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/source-files/" class="home-link router-link-active"><!----> <span class="site-name">wums</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/source-files/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://gitee.com/wmsnote/dashboard/wikis" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WiKi
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://gitee.com/wmsnote/source-files" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitEE
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/source-files/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://gitee.com/wmsnote/dashboard/wikis" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WiKi
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://gitee.com/wmsnote/source-files" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitEE
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/shell/" class="sidebar-heading clickable open"><span>shell</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/source-files/shell/条件判断.html" class="sidebar-link">条件判断</a></li><li><a href="/source-files/shell/循环.html" class="sidebar-link">循环</a></li><li><a href="/source-files/shell/函数.html" class="sidebar-link">函数</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/设计模式/" class="sidebar-heading clickable"><span>设计模式</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/prometheus/" class="sidebar-heading clickable"><span>prometheus</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/travis-ci/" class="sidebar-heading clickable"><span>travis-ci教程</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-dockerfile"><a href="#_1-dockerfile" class="header-anchor">#</a> 1. Dockerfile</h2> <div class="language-Dockerfile line-numbers-mode"><pre class="language-dockerfile"><code><span class="token keyword">FROM</span> nginx
+<span class="token keyword">COPY</span> dist/ /usr/share/nginx/html/
+<span class="token keyword">COPY</span> nginx.conf /etc/nginx/nginx.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_2-部署脚本"><a href="#_2-部署脚本" class="header-anchor">#</a> 2. 部署脚本</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token shebang important">#!/usr/bin/env bash</span>
+
+<span class="token builtin class-name">set</span> -u
+<span class="token builtin class-name">set</span> -e
+
+<span class="token comment">## =========================================================</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;请选择要发布的环境?&quot;</span>
+
+<span class="token keyword">select</span> <span class="token for-or-select variable">ENVIRONMENT</span> <span class="token keyword">in</span> prod  stage<span class="token punctuation">;</span>
+<span class="token keyword">do</span>
+    <span class="token builtin class-name">break</span>
+<span class="token keyword">done</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$ENVIRONMENT</span>&quot;</span> <span class="token operator">!=</span> <span class="token string">&quot;prod&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token string">&quot;<span class="token variable">$ENVIRONMENT</span>&quot;</span> <span class="token operator">!=</span> <span class="token string">&quot;stage&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;err input, quit now&quot;</span>
+<span class="token builtin class-name">exit</span> <span class="token number">1</span>
+<span class="token keyword">fi</span>
+
+<span class="token comment">## ======================================================</span>
+
+<span class="token builtin class-name">read</span> -r -p <span class="token string">&quot;确认发布到 <span class="token variable">$ENVIRONMENT</span> 环境? [Y/n] &quot;</span> input
+
+<span class="token keyword">case</span> <span class="token variable">$input</span> <span class="token keyword">in</span>
+    <span class="token punctuation">[</span>yY<span class="token punctuation">]</span><span class="token punctuation">[</span>eE<span class="token punctuation">]</span><span class="token punctuation">[</span>sS<span class="token punctuation">]</span><span class="token operator">|</span><span class="token punctuation">[</span>yY<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">&quot;Yes&quot;</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">[</span>nN<span class="token punctuation">]</span><span class="token punctuation">[</span>oO<span class="token punctuation">]</span><span class="token operator">|</span><span class="token punctuation">[</span>nN<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">&quot;No&quot;</span>
+        <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+
+    *<span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">&quot;Invalid input...&quot;</span>
+        <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">esac</span>
+
+<span class="token comment">## =======================================================</span>
+
+<span class="token function">sleep</span> <span class="token number">3</span>
+
+<span class="token comment">## 打包</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;============= 开始npm打包: npm run build:<span class="token variable">$ENVIRONMENT</span>==================&quot;</span>
+
+<span class="token function">npm</span> run build:<span class="token variable">$ENVIRONMENT</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== npm打包完成 ================== &quot;</span>
+
+<span class="token comment">## =======================================================</span>
+
+<span class="token function">sleep</span> <span class="token number">3</span>
+
+<span class="token comment"># 构建镜像</span>
+
+
+
+<span class="token assign-left variable">IMAGE_NAME</span><span class="token operator">=</span><span class="token string">&quot;vue-admin&quot;</span>
+<span class="token assign-left variable">IMAGE_ID</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%Y%m%d%H%M<span class="token variable">)</span></span>
+<span class="token assign-left variable">IMAGE_REGISTRY</span><span class="token operator">=</span><span class="token string">&quot;registry.cn-beijing.aliyuncs.com&quot;</span>
+<span class="token assign-left variable">IMAGE_NAMESPACE</span><span class="token operator">=</span><span class="token string">&quot;boe-com&quot;</span>
+<span class="token assign-left variable">IMAGE_FULLNAME</span><span class="token operator">=</span><span class="token variable">$IMAGE_REGISTRY</span>/<span class="token variable">$IMAGE_NAMESPACE</span>/<span class="token variable">$IMAGE_NAME</span><span class="token builtin class-name">:</span><span class="token variable">$IMAGE_ID</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 开始构建镜像 IMAGE_FULLNAME: <span class="token variable">$IMAGE_FULLNAME</span> ================== &quot;</span>
+
+
+
+<span class="token comment">## 关闭shop_admin容器</span>
+<span class="token comment">#docker stop vue-admin || true;</span>
+
+<span class="token comment">## 删除shop_admin容器</span>
+<span class="token comment">#docker rm vue-admin || true;</span>
+
+<span class="token comment">## 删除shop/admin镜像</span>
+<span class="token comment">#docker rmi --force $(docker images | grep vue-admin | awk '{print $3}')</span>
+
+<span class="token comment">## 构建shop/admin:$image_version镜像</span>
+<span class="token comment">#docker build -t registry.cn-beijing.aliyuncs.com/prod-bigbay/$IMAGE_NAME:$IMAGE_ID --build-arg JAR_FILE=$JAR_FILE .</span>
+docker build -t <span class="token variable">$IMAGE_FULLNAME</span> <span class="token builtin class-name">.</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 镜像构建完成 ================== &quot;</span>
+
+<span class="token function">sleep</span> <span class="token number">3</span>
+<span class="token comment">## =========================================================================</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 开始推送镜像到远程仓库 ================== &quot;</span>
+
+<span class="token assign-left variable">REGISTRY_USERNAME</span><span class="token operator">=</span><span class="token string">&quot;t_1516617822136_0451&quot;</span>
+<span class="token builtin class-name">read</span> -p <span class="token string">&quot;please input image registry password: &quot;</span> -t <span class="token number">60</span> REGISTRY_PASSWORD
+
+
+<span class="token comment"># docker logout</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${REGISTRY_PASSWORD<span class="token operator">:-</span>&quot;woms0613&quot;}</span> <span class="token operator">|</span> docker login <span class="token variable">$IMAGE_REGISTRY</span> -u <span class="token variable">$REGISTRY_USERNAME</span> --password-stdin
+docker push <span class="token variable">$IMAGE_FULLNAME</span>
+
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot; ================== 镜像推送完成 ================== &quot;</span>
+
+<span class="token comment">## 删除build过程中产生的镜像    #docker image prune -a -f</span>
+<span class="token comment"># docker rmi $(docker images -f &quot;dangling=true&quot; -q)</span>
+
+<span class="token comment">## 对空间进行自动清理</span>
+<span class="token comment"># docker system prune -a -f</span>
+
+
+<span class="token comment">## docker login aliyun</span>
+<span class="token comment"># sudo docker login --username=t_1516617822136_0451 registry.cn-beijing.aliyuncs.com</span>
+
+<span class="token comment">## 启动</span>
+<span class="token comment"># docker run --rm --name $IMAGE_NAME -p 80:80 -d $IMAGE_DOMAIN/$IMAGE_NAME:$IMAGE_VERSION</span>
+
+<span class="token comment"># echo &quot;docker run --rm --name $IMAGE_NAME -p 80:80 -d $IMAGE_DOMAIN/$IMAGE_NAME:$IMAGE_VERSION&quot;</span>
+
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/20/2020, 3:20:54 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/source-files/assets/js/app.1a7deada.js" defer></script><script src="/source-files/assets/js/2.6ef31ef9.js" defer></script><script src="/source-files/assets/js/7.e5cd0322.js" defer></script>
+  </body>
+</html>
