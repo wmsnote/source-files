@@ -6,7 +6,13 @@ module.exports = {
         lineNumbers: true
     },
     plugins: [
-      ['vuepress-plugin-code-copy', true]
+      ['vuepress-plugin-code-copy', true],
+      [
+        '@vuepress/search',
+        {
+          searchMaxSuggestions: 10
+        }
+      ]
     ],
     themeConfig: {
         sidebarDepth: 5,
