@@ -47,6 +47,15 @@ module.exports = {
               ['设计模式/StrategyDesignPattern','策略模式'],
               ['设计模式/VisitorDesignPattern','访问者模式'],
             ]
+          },
+          {
+            title: 'prometheus',
+            path: '/prometheus/',
+            collapsable: true,
+            sidebarDepth: 2,
+            children: [
+              ['prometheus/prometheus监控springboot','监控springboot']
+            ]
           }
         ]
     }
