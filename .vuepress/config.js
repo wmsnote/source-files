@@ -56,6 +56,15 @@ module.exports = {
             children: [
               ['prometheus/prometheus监控springboot','监控springboot']
             ]
+          },
+          {
+            title: 'travis-ci教程',
+            path: '/travis-ci/',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: [
+              ['travis-ci/travis.yml','配置文件详解']
+            ]
           }
         ]
     }
