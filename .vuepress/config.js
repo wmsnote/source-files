@@ -32,13 +32,14 @@ module.exports = {
             children: [
               ['shell/Bash简介','Bash简介'],
               ['shell/基本语法','基本语法'],
+              ['shell/Bash的模式扩展','Bash的模式扩展'],
               ['shell/条件判断','条件判断'],
               ['shell/循环','循环'],
               ['shell/函数','函数'],
               ['shell/set','set命令'],
               ['shell/脚本除错','脚本除错'],
-              ['shell/mktemp_按到_trap','mktemp命令和trap命令'],
-              ['shell/bash启动环境','bash启动环境'],
+              ['shell/mktemp_and_trap','mktemp命令和trap命令'],
+              ['shell/Bash启动环境','Bash启动环境'],
               ['shell/命令提示符','命令提示符']
             ]
           },
