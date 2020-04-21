@@ -30,6 +30,8 @@ module.exports = {
             collapsable: true,
             sidebarDepth: 1,
             children: [
+              ['shell/Bash简介','Bash简介'],
+              ['shell/基本语法','基本语法'],
               ['shell/条件判断','条件判断'],
               ['shell/循环','循环'],
               ['shell/函数','函数'],
