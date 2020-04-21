@@ -35,7 +35,9 @@ module.exports = {
               ['shell/函数','函数'],
               ['shell/set','set命令'],
               ['shell/脚本除错','脚本除错'],
-              ['shell/mktemp_按到_trap','mktemp命令和trap命令']
+              ['shell/mktemp_按到_trap','mktemp命令和trap命令'],
+              ['shell/bash启动环境','bash启动环境'],
+              ['shell/命令提示符','命令提示符']
             ]
           },
           {
