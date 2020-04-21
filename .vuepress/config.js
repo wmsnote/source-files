@@ -33,7 +33,9 @@ module.exports = {
               ['shell/条件判断','条件判断'],
               ['shell/循环','循环'],
               ['shell/函数','函数'],
-              ['shell/set','set命令']
+              ['shell/set','set命令'],
+              ['shell/脚本除错','脚本除错'],
+              ['shell/mktemp_按到_trap','mktemp命令和trap命令']
             ]
           },
           {
