@@ -50,6 +50,7 @@ module.exports = {
             collapsable: true,
             sidebarDepth: 1,
             children: [
+              ['设计模式/FactoryDesignPattern','工厂模式'],
               ['设计模式/ChainOfResponsibilityDesignPattern','责任链模式'],
               ['设计模式/IteratorDesignPattern','迭代器模式'],
               ['设计模式/StatePattern','状态机模式'],
