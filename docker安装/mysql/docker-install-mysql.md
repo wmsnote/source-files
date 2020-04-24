@@ -26,6 +26,7 @@ docker exec -it mysql /bin/bash
 mysql -u root -p
 use mysql
 ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+create database sync_api  DEFAULT CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;
 ```
 
 **everything is ok** ☯
