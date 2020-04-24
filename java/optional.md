@@ -1,4 +1,4 @@
-## Java 8 Optional类深度解析
+## Optional类深度解析
 
 > http://www.importnew.com/6675.html
 
@@ -7,6 +7,7 @@
 新版本的Java，比如[Java 8](http://blog.sanaulla.info/tag/java-8/)引入了一个新的[Optional](http://download.java.net/jdk8/docs/api/java/util/Optional.html)类。Optional类的Javadoc描述如下：
 
 这是一个可以为null的容器对象。如果值存在则isPresent()方法会返回true，调用get()方法会返回该对象。
+
 
 ## 创建optional对象
 
@@ -179,6 +180,9 @@ Optional<String> shortName = anotherName.filter((value) -> value.length() > 6);
 System.out.println(shortName.orElse("The name is less than 6 characters"));
 ```
 
+
+
+
 ## 使用 Java 8 Optional 的正确姿势
 
 > http://blog.csdn.net/wisgood/article/details/52503052
@@ -292,7 +296,7 @@ map 函数隆重登场
 ```java
 //当 user.isPresent() 为真, 获得它关联的 orders, 为假则返回一个空集合时
 return user.map(u -> u.getOrders())
-  		.orElse(Collections.emptyList())
+        .orElse(Collections.emptyList())
 ```
 
 
