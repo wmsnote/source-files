@@ -89,6 +89,26 @@ module.exports = {
               ['Dockerfile/springboot','SpringBoot'],
               ['Dockerfile/vue','Vue']
             ]
+          },
+          {
+            title: 'Java教程',
+            path: '/java/',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: [
+              ['java/','apache-commons'],
+              ['java/java-8-Optional','java 8 Optional'],
+              ['java/Java泛型详解','Java泛型详解'],
+              ['java/JavaStreamAPI','JavaStreamAPI'],
+              ['java/JAVA8新特性分析','JAVA8新特性分析'],
+              ['java/Java多线程实现的三种方式','Java多线程实现的三种方式'],
+              ['java/jdbc','jdbc'],
+              ['java/map遍历','map遍历'],
+              ['java/spring扫描自定义注解并进行操作','spring扫描自定义注解并进行操作'],
+              ['java/反射-提高扩展性','反射-提高扩展性'],
+              ['java/注解的定义和反射','注解的定义和反射'],
+              ['java/获取指定包下所有自定义注解并提取注解信息','获取指定包下所有自定义注解并提取注解信息'],
+            ]
           }
         ]
     }
