@@ -1,4 +1,4 @@
-# Java Stream API 入门篇
+## Java Stream API 入门篇
 
 **代码简洁**，函数式编程写出的代码简洁且意图明确，使用stream接口让你从此告别for循环。
 
@@ -107,9 +107,9 @@ Object[] array = stream.toArray();
 
 ```java
 
-    List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);  
-    list.stream().parallel().forEach(x -> System.out.print(x));  
-    list.stream().parallel().forEachOrdered(x -> System.out.print(x));  
+    List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
+    list.stream().parallel().forEach(x -> System.out.print(x));
+    list.stream().parallel().forEachOrdered(x -> System.out.print(x));
 
 ```
 
@@ -146,7 +146,7 @@ Stream<String> stream = Stream.of("1", "2", "3", "4");
 
 ### parallel()--并行流
 
-> 流可以是顺序的也可以是并行的。顺序流的操作是在单线程上执行的，而并行流的操作是在多线程上并发执行的。 
+> 流可以是顺序的也可以是并行的。顺序流的操作是在单线程上执行的，而并行流的操作是在多线程上并发执行的。
 
 ```java
 stream.parallel().forEach(System.out::println);
@@ -181,7 +181,7 @@ Stream<String> stream = Stream.of("I", "love", "you", "too");
 
 ```java
 		// 使用Stream.forEach()迭代
-		String[] arry = {"I", "love", "you", "too"}; 
+		String[] arry = {"I", "love", "you", "too"};
 		Stream<String> stream = Stream.of(arry);
 		stream.forEach(str -> System.out.println(str));
 ```
@@ -191,7 +191,7 @@ Stream<String> stream = Stream.of("I", "love", "you", "too");
 > 函数原型为Stream<T> filter(Predicate<? super T> predicate)，作用是返回一个只包含满足predicate条件元素的Stream。
 
 ```java
-		String[] arry = {"I", "love", "you", "too"}; 
+		String[] arry = {"I", "love", "you", "too"};
 		Stream<String> stream = Stream.of(arry);
 		stream.filter(str->str.length()==3)//中间操作，过滤元素长度等于3的元素
 			  .forEach(str -> System.out.println(str));//最终操作
@@ -202,7 +202,7 @@ Stream<String> stream = Stream.of("I", "love", "you", "too");
 >函数原型为Stream<T> distinct()，作用是返回一个去除重复元素之后的Stream
 
 ```java
-		String[] arry = {"I", "love", "you", "too","too","you"}; 
+		String[] arry = {"I", "love", "you", "too","too","you"};
 		Stream<String> stream = Stream.of(arry);
 		stream.distinct()//中间操作,去除重复元素
 			  .forEach(str -> System.out.println(str));//最终操作
@@ -238,7 +238,7 @@ Stream<String> stream = Stream.of("I", "love", "you", "too");
     		  .forEach(i -> System.out.println(i));
 ```
 
-# Java Stream API 进阶篇
+## Java Stream API 进阶篇
 
 **规约操作**（reduction operation）又被称作折叠操作（fold），是通过某个连接动作将所有元素汇总成一个汇总结果的过程。元素求和、求最大值或最小值、求出元素总个数、将所有元素转换成一个列表或集合，都属于规约操作。Stream类库有两个通用的规约操作reduce()和collect()，也有一些为简化书写而设计的专用规约操作，比如sum()、max()、min()、count()等。
 

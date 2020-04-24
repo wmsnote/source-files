@@ -1,4 +1,4 @@
-# Java 8 Optional类深度解析
+## Java 8 Optional类深度解析
 
 > http://www.importnew.com/6675.html
 
@@ -14,7 +14,7 @@
 
 > 为非null的值创建一个Optional
 
-of方法通过工厂方法创建Optional类。需要注意的是，创建对象时传入的参数不能为null。如果传入参数为null，则抛出NullPointerException 
+of方法通过工厂方法创建Optional类。需要注意的是，创建对象时传入的参数不能为null。如果传入参数为null，则抛出NullPointerException
 
 ```java
 //调用工厂方法创建Optional实例
@@ -60,7 +60,7 @@ if (name.isPresent()) {
 > 如果Optional有值则将其返回，否则抛出NoSuchElementException
 
 ```java
-//执行下面的代码会输出：No value present 
+//执行下面的代码会输出：No value present
 try {
   //在空的Optional实例上调用get()，抛出NoSuchElementException
   System.out.println(empty.get());
@@ -104,8 +104,8 @@ System.out.println(name.orElseGet(() -> "Default Value"));
 ```java
 try {
   //orElseThrow与orElse方法类似。与返回默认值不同，
-  //orElseThrow会抛出lambda表达式或方法生成的异常 
- 
+  //orElseThrow会抛出lambda表达式或方法生成的异常
+
   empty.orElseThrow(ValueAbsentException::new);
 } catch (Throwable ex) {
   //输出: No value present in the Optional instance
@@ -152,8 +152,8 @@ flatMap方法与map方法类似，区别在于mapping函数的返回值不同。
 
 ```java
 //flatMap与map（Function）非常类似，区别在于传入方法的lambda表达式的返回类型。
-//map方法中的lambda表达式返回值可以是任意类型，在map函数返回之前会包装为Optional。 
-//但flatMap方法中的lambda表达式返回值必须是Optionl实例。 
+//map方法中的lambda表达式返回值可以是任意类型，在map函数返回之前会包装为Optional。
+//但flatMap方法中的lambda表达式返回值必须是Optionl实例。
 upperName = name.flatMap((value) -> Optional.of(value.toUpperCase()));
 System.out.println(upperName.orElse("No value found"));//输出SANAULLA
 ```
@@ -171,7 +171,7 @@ System.out.println(upperName.orElse("No value found"));//输出SANAULLA
 //如果满足则返回同一个Option实例，否则返回空Optional。
 Optional<String> longName = name.filter((value) -> value.length() > 6);
 System.out.println(longName.orElse("The name is less than 6 characters"));//输出Sanaulla
- 
+
 //另一个例子是Optional值不满足filter指定的条件。
 Optional<String> anotherName = Optional.of("Sana");
 Optional<String> shortName = anotherName.filter((value) -> value.length() > 6);
@@ -179,7 +179,7 @@ Optional<String> shortName = anotherName.filter((value) -> value.length() > 6);
 System.out.println(shortName.orElse("The name is less than 6 characters"));
 ```
 
-# 使用 Java 8 Optional 的正确姿势
+## 使用 Java 8 Optional 的正确姿势
 
 > http://blog.csdn.net/wisgood/article/details/52503052
 
@@ -188,7 +188,7 @@ System.out.println(shortName.orElse("The name is less than 6 characters"));
 我们知道 [Java ](http://lib.csdn.net/base/java)8 增加了一些很有用的 API, 其中一个就是 Optional. 如果对它不稍假探索, 只是轻描淡写的认为它可以优雅的解决 NullPointException 的问题, 于是代码就开始这么写了
 
 ```java
-Optional<User> user = ...... 
+Optional<User> user = ......
 if (user.isPresent()) {
     return user.getOrders();
 } else {
@@ -252,9 +252,9 @@ Optional.empty()
 
 那是不是我们只要用 `Optional.ofNullable(obj)` 一劳永逸, 以不变应二变的方式来构造 Optional 实例就行了呢? 那也未必, 否则 `Optional.of(obj)` 何必如此暴露呢, 私有则可?
 
-我本人的观点是:  
+我本人的观点是:
 
-1. 当我们非常非常的明确将要传给 `Optional.of(obj)` 的 `obj` 参数不可能为 null 时, 比如它是一个刚 `new` 出来的对象(`Optional.of(new User(...))`), 或者是一个非 null 常量时;  
+1. 当我们非常非常的明确将要传给 `Optional.of(obj)` 的 `obj` 参数不可能为 null 时, 比如它是一个刚 `new` 出来的对象(`Optional.of(new User(...))`), 或者是一个非 null 常量时;
 
 
 2. 当想为 `obj` 断言不为 null 时, 即我们想在万一 `obj` 为 null 立即报告 `NullPointException` 异常, 立即修改, 而不是隐藏空指针异常时, 我们就应该果断的用 `Optional.of(obj)` 来构造 Optional 实例, 而不让任何不可预计的 null 值有可乘之机隐身于 Optional 中.
