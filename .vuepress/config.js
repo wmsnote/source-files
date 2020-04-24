@@ -96,7 +96,7 @@ module.exports = {
             collapsable: true,
             sidebarDepth: 1,
             children: [
-              ['java/','apache-commons'],
+              ['java/apache-commons','apache-commons'],
               ['java/java-8-Optional','java 8 Optional'],
               ['java/Java泛型详解','Java泛型详解'],
               ['java/JavaStreamAPI','JavaStreamAPI'],
