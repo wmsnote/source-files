@@ -37,6 +37,7 @@ module.exports = {
               ['shell/变量','变量'],
               ['shell/字符串操作','字符串操作'],
               ['shell/算数运算','算数运算'],
+              ['shell/Bash行操作','Bash行操作'],
               ['shell/条件判断','条件判断'],
               ['shell/循环','循环'],
               ['shell/函数','函数'],
