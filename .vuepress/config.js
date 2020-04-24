@@ -34,6 +34,7 @@ module.exports = {
               ['shell/基本语法','基本语法'],
               ['shell/Bash的模式扩展','Bash的模式扩展'],
               ['shell/引号和转义','引号和转义'],
+              ['shell/变量','变量'],
               ['shell/条件判断','条件判断'],
               ['shell/循环','循环'],
               ['shell/函数','函数'],
