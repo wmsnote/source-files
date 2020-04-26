@@ -109,6 +109,15 @@ module.exports = {
               ['java/注解的定义和反射','注解的定义和反射'],
               ['java/获取指定包下所有自定义注解并提取注解信息','获取指定包下所有自定义注解并提取注解信息'],
             ]
+          },
+          {
+            title: 'SpringBoot2.x',
+            path: '/springboot2/',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: [
+              ['springboot2/springboot调优','springboot2调优'],
+            ]
           }
         ]
     }
