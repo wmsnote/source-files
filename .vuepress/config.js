@@ -122,6 +122,8 @@ module.exports = {
             children: [
               ['springboot2/springboot调优','springboot2调优'],
               ['springboot2/事物的传播行为','事物的传播行为'],
+              ['springboot2/正确关闭springboot应用','正确关闭springboot应用'],
+              ['springboot2/获取当前激活的profile','获取当前激活的profile'],
             ]
           }
         ]
