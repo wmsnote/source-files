@@ -121,6 +121,7 @@ module.exports = {
             sidebarDepth: 1,
             children: [
               ['springboot2/springboot调优','springboot2调优'],
+              ['springboot2/事物的传播行为','事物的传播行为'],
             ]
           }
         ]
