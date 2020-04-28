@@ -133,7 +133,7 @@ module.exports = {
             collapsable: true,
             sidebarDepth: 1,
             children: [
-              ['nginx/极简教程常用场景','极简教程常用场景'],
+              ['nginx/nginx-configuration-combat','极简教程常用场景'],
               ['nginx/install','install'],
             ]
           }

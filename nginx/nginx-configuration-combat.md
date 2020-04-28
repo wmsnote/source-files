@@ -1,25 +1,25 @@
-<!-- MarkdownTOC autolink="true" levels="2,3" style="unordered" -->
+<!-- MarkdownTOC autolink="true" levels="2,3" style="ordered" -->
 
-- [1. Outline](#1-outline)
-- [2. Installation and Use](#2-installation-and-use)
-    - [installation](#installation)
-    - [use](#use)
-- [3. nginx configuration combat](#3-nginx-configuration-combat)
-    - [3.1 http reverse proxy configuration](#31-http-reverse-proxy-configuration)
-    - [3.2 Load Balancing Configuration](#32-load-balancing-configuration)
-    - [3.3 Site configuration of multiple webapp](#33-site-configuration-of-multiple-webapp)
-    - [3.4 https reverse proxy configuration](#34-https-reverse-proxy-configuration)
-    - [3.5 Static Site Configuration](#35-static-site-configuration)
-    - [3.6 Build a file server](#36-build-a-file-server)
-    - [3.7 Cross-domain solutions](#37-cross-domain-solutions)
-- [4. reference](#4-reference)
+1. [Outline](#outline)
+1. [Installation and Use](#installation-and-use)
+    1. [installation](#installation)
+    1. [use](#use)
+1. [nginx configuration combat](#nginx-configuration-combat)
+    1. [http reverse proxy configuration](#http-reverse-proxy-configuration)
+    1. [Load Balancing Configuration](#load-balancing-configuration)
+    1. [Site configuration of multiple webapp](#site-configuration-of-multiple-webapp)
+    1. [https reverse proxy configuration](#https-reverse-proxy-configuration)
+    1. [Static Site Configuration](#static-site-configuration)
+    1. [Build a file server](#build-a-file-server)
+    1. [Cross-domain solutions](#cross-domain-solutions)
+1. [reference](#reference)
 
 <!-- /MarkdownTOC -->
 
 
 
 
-## 1. Outline
+## Outline
 
 **what is Nginx?**
 
@@ -36,7 +36,7 @@ Reverse proxy (Reverse Proxy) mode refers to the proxy server to accept connecti
 
 
 
-## 2. Installation and Use
+## Installation and Use
 
 ### installation
 
@@ -80,11 +80,11 @@ nginx.exe -c conf/nginx.conf
 If you are running on Linux, write a shell script, very much the same.
 
 
-## 3. nginx configuration combat
+## nginx configuration combat
 
 I have always believed that various configurations or a combination of the actual development tools to tell the story, will make people easier to understand.
 
-### 3.1 http reverse proxy configuration
+### http reverse proxy configuration
 
 Let's achieve a small goal: do not consider the complexity of the configuration, just completed a reverse http proxy.
 
@@ -212,7 +212,7 @@ Well, let's try it:
 3. Start earlier in order startup.bat
 4. Access www.helloworld.com in the browser, not surprisingly, already visited.
 
-### 3.2 Load Balancing Configuration
+### Load Balancing Configuration
 
 In the previous example, only point to a proxy server.
 
@@ -275,7 +275,7 @@ http {
 }
 ```
 
-### 3.3 Site configuration of multiple webapp
+### Site configuration of multiple webapp
 
 When a website more functional, often need some independent functional modules spin-off, independent maintenance. In this case, usually, there will be more webapp.
 
@@ -331,7 +331,7 @@ http {
 }
 ```
 
-### 3.4 https reverse proxy configuration
+### https reverse proxy configuration
 
 Some of the higher security requirements of the site, may use HTTPS (ssl communication using standard HTTP protocol security).
 
@@ -370,7 +370,7 @@ Other http and reverse proxy is basically the same, but in  Server some differen
   }
 ```
 
-### 3.5 Static Site Configuration
+### Static Site Configuration
 
 Sometimes, we need to configure a static site (ie a bunch of static html files and resources).
 
@@ -414,7 +414,7 @@ Then, HOST:
 
 In this case, access static.zp.cn in the local browser, you can access a static site.
 
-### 3.6 Build a file server
+### Build a file server
 
 Sometimes, teams need to archive some data or information, the file server is essential. Use Nginx can be very quick and easy to build a simple file service.
 
@@ -447,7 +447,7 @@ server {
 }
 ```
 
-### 3.7 Cross-domain solutions
+### Cross-domain solutions
 
 web development field, separated front and rear ends frequently used mode. In this mode, the front and rear ends are each independently of the web application, for example: the rear end is a Java program, a distal React Vue or application.
 
@@ -535,7 +535,7 @@ server {
 
 This, is complete.
 
-## 4. reference
+## reference
 
 * Nginx's Chinese Wiki
 
