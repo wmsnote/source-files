@@ -124,6 +124,7 @@ module.exports = {
               ['springboot2/事物的传播行为','事物的传播行为'],
               ['springboot2/正确关闭springboot应用','正确关闭springboot应用'],
               ['springboot2/获取当前激活的profile','获取当前激活的profile'],
+              ['springboot2/logback-spring','springboot集成logback日志']
             ]
           }
         ]
