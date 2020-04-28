@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/wmsnote/source-files#readme",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.1",
     "vuepress": "^1.4.1"
   },
   "dependencies": {
