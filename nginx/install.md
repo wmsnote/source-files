@@ -1,6 +1,6 @@
 [TOC]
 
-
+[[TOC]]
 
 ## Linux 安装
 

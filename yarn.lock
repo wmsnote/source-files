@@ -7479,6 +7479,11 @@ vuepress-plugin-container@^2.0.2:
   dependencies:
     markdown-it-container "^2.0.0"
 
+vuepress-plugin-global-toc@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-global-toc/-/vuepress-plugin-global-toc-1.0.1.tgz#8d3cb7f48736353e5a1ab588099b2212c9bd8ee9"
+  integrity sha512-M4QoNPR8Gq1nleEoEsZaU+wH1I0PH3gShNijyQ1MxlgE2LSle2+WgOS6Yc5PC53+WdsDuVbf/Anz1WM00q1rTQ==
+
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-smooth-scroll/-/vuepress-plugin-smooth-scroll-0.0.3.tgz#6eff2d4c186cca917cc9f7df2b0af7de7c8c6438"

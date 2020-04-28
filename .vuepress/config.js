@@ -8,6 +8,7 @@ module.exports = {
     plugins: [
       ['vuepress-plugin-code-copy', true],
       ['@vuepress/back-to-top'],
+      ['vuepress-plugin-global-toc'],
       [
         '@vuepress/search',
         {
