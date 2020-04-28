@@ -126,6 +126,16 @@ module.exports = {
               ['springboot2/获取当前激活的profile','获取当前激活的profile'],
               ['springboot2/logback-spring','springboot集成logback日志']
             ]
+          },
+          {
+            title: 'nginx',
+            path: '/nginx/',
+            collapsable: true,
+            sidebarDepth: 1,
+            children: [
+              ['nginx/极简教程常用场景','极简教程常用场景'],
+              ['nginx/install','install'],
+            ]
           }
         ]
     }
