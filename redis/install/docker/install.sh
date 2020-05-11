@@ -8,5 +8,5 @@ docker run -v "$PWD"/redis.conf:/usr/local/etc/redis/redis.conf \
 redis-server /usr/local/etc/redis/redis.conf
 
 # redis-cli
-# docker run --name redis-cli -it --link redis:redis --rm redis redis-cli -h redis
+# docker run --name redis-cli -it --link redis:redis --rm redis redis-cli -h redis -p 6379 -a myPassword
 
