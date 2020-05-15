@@ -2,8 +2,8 @@
 | --------------------- | ------------------- |
 | commons-configuration | 读取配置文件工具类           |
 | commons-beanutils     | javabean工具类         |
-| commons-lang          | 字符串，数组，日期工具类        |
-| commons-collections   | 集合工具类               |
+| commons-lang3          | 字符串，数组，日期工具类        |
+| commons-collections4   | 集合工具类               |
 | commons-io            | io、file、filename工具类 |
 | commons-fileupload    | 文件上传工具类             |
 |                       |                     |
@@ -25,35 +25,35 @@ http://blog.csdn.net/davidhsing/article/details/5846944
 读取properties文件
 
 ```java
-//注意路径默认指向的是 classpath 的根目录        
-Configuration config = new PropertiesConfiguration("te/test.properties");        
-String ip=config.getString("ip");        
-int port=config.getInt("port");        
-String title=config.getString("application.title");        
-//再举个Configuration的比较实用的方法吧,在读取配置文件的时候有可能这个键值对应的值为空，那么在下面这个方法中        
-//你就可以为它设置默认值。比如下面这个例子就会在test.properties这个文件中找id的值，如果找不到就会给id设置值为123               
-Integer id=config.getInteger("id", new Integer(123));        
-//如果在properties 文件中有如下属性keys=cn,com,org,uk,edu,jp,hk        
-//可以实用下面的方式读取：        
-String[] keys1=config.getStringArray("keys");        
-List keys2=config.getList("keys");  
+//注意路径默认指向的是 classpath 的根目录
+Configuration config = new PropertiesConfiguration("te/test.properties");
+String ip=config.getString("ip");
+int port=config.getInt("port");
+String title=config.getString("application.title");
+//再举个Configuration的比较实用的方法吧,在读取配置文件的时候有可能这个键值对应的值为空，那么在下面这个方法中
+//你就可以为它设置默认值。比如下面这个例子就会在test.properties这个文件中找id的值，如果找不到就会给id设置值为123
+Integer id=config.getInteger("id", new Integer(123));
+//如果在properties 文件中有如下属性keys=cn,com,org,uk,edu,jp,hk
+//可以实用下面的方式读取：
+String[] keys1=config.getStringArray("keys");
+List keys2=config.getList("keys");
 ```
 
 读取xml文件
 
 ```java
-XMLConfiguration config = new XMLConfiguration("XMLtest.xml");      
-String backColor = config.getString("colors.background");     
-String textColor = config.getString("colors.text");     
-//现在我们知道了如何读取标签下的数据，那么如何读标签中的属性呢？看下面     
-//<link normal="#000080" visited="#800080"/>     
-String linkNormal = config.getString("colors.link[@normal]");     
-//还支持引用呢！     
-//<default>${colors.header}</default>     
-String defColor = config.getString("colors.default");     
-//也支持其他类型，但是一定要确定类型正确，否则要报异常哦     
-//<rowsPerPage>15</rowsPerPage>     
-int rowsPerPage = config.getInt("rowsPerPage"); 
+XMLConfiguration config = new XMLConfiguration("XMLtest.xml");
+String backColor = config.getString("colors.background");
+String textColor = config.getString("colors.text");
+//现在我们知道了如何读取标签下的数据，那么如何读标签中的属性呢？看下面
+//<link normal="#000080" visited="#800080"/>
+String linkNormal = config.getString("colors.link[@normal]");
+//还支持引用呢！
+//<default>${colors.header}</default>
+String defColor = config.getString("colors.default");
+//也支持其他类型，但是一定要确定类型正确，否则要报异常哦
+//<rowsPerPage>15</rowsPerPage>
+int rowsPerPage = config.getInt("rowsPerPage");
 ```
 
 # commons-beanutils
@@ -74,8 +74,8 @@ int rowsPerPage = config.getInt("rowsPerPage");
 克隆bean
 
 ```java
-     //克隆  
-        Person person2 =  (Person)BeanUtils.cloneBean(person);  
+     //克隆
+        Person person2 =  (Person)BeanUtils.cloneBean(person);
 ```
 
 bean和map相互转换
@@ -144,8 +144,8 @@ http://www.importnew.com/13715.html
 - ServletFileUpload从FileUpload继承，而FileUpload又从FileUploadBase继承，功能：分析传入的request对象、得到文件列表FileItemIterator……
 
 ```java
-	//* 检查请求是否含有上传文件  
-    boolean isMultipart = ServletFileUpload.isMultipartContent(request);  
+	//* 检查请求是否含有上传文件
+    boolean isMultipart = ServletFileUpload.isMultipartContent(request);
 
 ```
 
