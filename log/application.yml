@@ -1,0 +1,21 @@
+# logging
+logging:
+  config: classpath:logback-spring.xml
+  file.path: ./logs
+  level:
+    root: debug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
