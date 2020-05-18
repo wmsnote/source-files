@@ -11,7 +11,7 @@
 
 	<springProperty scope="context" name="APP_NAME" source="spring.application.name" defaultValue="app"/>
 	<springProperty scope="context" name="LOG_PATH" source="logging.file.name" defaultValue="./logs"/>
-    <springProperty scope="context" name="LOG_LEVEL" source="logging.level.root" defaultValue="info"/>
+
 
 
 	<!--彩色格式输出到控制台-->
@@ -153,8 +153,7 @@
         <appender-ref ref="WARN_FILE" />
         <appender-ref ref="ERROR_FILE" />
     </root>
-
-    <logger name="com.boe.retail.data.syncapi" level="${LOG_LEVEL}" additivity="false">
+    <logger name="com.boe" level="debug" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="DEBUG_FILE" />
         <appender-ref ref="INFO_FILE" />
@@ -173,7 +172,7 @@
             <appender-ref ref="ERROR_FILE" />
         </root>
 
-        <logger name="com.boe.retail.data.syncapi" level="${LOG_LEVEL}" additivity="false">
+        <logger name="com.boe" level="debug" additivity="false">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="DEBUG_FILE" />
             <appender-ref ref="INFO_FILE" />
@@ -192,7 +191,7 @@
             <appender-ref ref="ERROR_FILE" />
         </root>
 
-        <logger name="com.boe.retail.data.syncapi" level="${LOG_LEVEL}" additivity="false">
+        <logger name="com.boe" level="info" additivity="false">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="DEBUG_FILE" />
             <appender-ref ref="INFO_FILE" />
