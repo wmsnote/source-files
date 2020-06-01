@@ -13,7 +13,7 @@ docker run -d --name prometheus -p 9090:9090 -v /home/user/Desktop/monitor/prome
 
 redis-exporter
 docker pull oliver006/redis_exporter
-docker run -d --name redis_exporter -p 9121:9121 -e REDIS_ADDR=redis://192.168.43.21:6379 REDIS_PASSWORD=foobared oliver006/redis_exporter
+docker run -d --name redis_exporter -p 9121:9121 -e REDIS_ADDR=redis://192.168.43.21:6379 -e REDIS_PASSWORD=foobared oliver006/redis_exporter
 
 
 https://hub.docker.com/r/oliver006/redis_exporter
