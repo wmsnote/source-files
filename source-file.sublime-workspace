@@ -1,0 +1,1075 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Vali",
+				"Validated\tabc"
+			],
+			[
+				"sub",
+				"submit\tabc"
+			],
+			[
+				"pro",
+				"properties\tabc"
+			],
+			[
+				"G",
+				"Github仓库地址\tabc"
+			],
+			[
+				"springboot",
+				"springboot2调优\tabc"
+			],
+			[
+				"springboo",
+				"springboot2\tabc"
+			],
+			[
+				"bash",
+				"Bash"
+			],
+			[
+				"redis",
+				"redis_container_exist\tabc"
+			],
+			[
+				"redi",
+				"redis_running\tabc"
+			],
+			[
+				"Ba",
+				"Bash的模式扩展\tabc"
+			],
+			[
+				"命令",
+				"命令提示符\t(命令提示符.md)"
+			],
+			[
+				"spr",
+				"springboot-admin\t(springboot.md)"
+			],
+			[
+				"tr",
+				"travis-ci\tabc"
+			],
+			[
+				"con",
+				"containerName\tabc"
+			],
+			[
+				"net",
+				"networks"
+			],
+			[
+				"na",
+				"names\tabc"
+			],
+			[
+				"java",
+				"java\tabc"
+			],
+			[
+				"pre",
+				"pre\tpre"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"sty",
+				"style\tAttr"
+			],
+			[
+				"su",
+				"super〔class〕"
+			],
+			[
+				"wu",
+				"wu_mingsheng@126.com\tabc"
+			],
+			[
+				"oss",
+				"oss_dir\tabc"
+			],
+			[
+				"in",
+				"input〔function〕"
+			],
+			[
+				"add",
+				"add3\tabc"
+			],
+			[
+				"el",
+				"elif〔keyword〕"
+			],
+			[
+				"my",
+				"my_loves\tabc"
+			],
+			[
+				"ex",
+				"extract_variables\tabc"
+			],
+			[
+				"m",
+				"my_names\tabc"
+			],
+			[
+				"co",
+				"com"
+			],
+			[
+				"a",
+				"a\ta"
+			],
+			[
+				"img",
+				"img\timg"
+			],
+			[
+				"he",
+				"hello\t(hello.sublime-snippet)"
+			],
+			[
+				"Fla",
+				"Flask〔module〕"
+			],
+			[
+				"py",
+				"python3\tabc"
+			],
+			[
+				"app",
+				"app"
+			],
+			[
+				"def",
+				"def\tFunction"
+			],
+			[
+				"Fl",
+				"Flask〔module〕"
+			],
+			[
+				"rename",
+				"renames〔function〕"
+			],
+			[
+				"re",
+				"remind\tabc"
+			],
+			[
+				"u",
+				"updateUserButton\tabc"
+			],
+			[
+				"per",
+				"permissionForm\tabc"
+			],
+			[
+				"da",
+				"detailData"
+			],
+			[
+				"handle",
+				"handleAdd\tabc"
+			],
+			[
+				"st",
+				"startTime\tabc"
+			],
+			[
+				"validate",
+				"validateEndTime\tabc"
+			],
+			[
+				"han",
+				"handleCancel"
+			],
+			[
+				"get",
+				"getEnabledInstitutions\tabc"
+			],
+			[
+				"ha",
+				"handleFilter"
+			],
+			[
+				"editR",
+				"editRoleForm\tabc"
+			],
+			[
+				"IM",
+				"IMAGE_REGISTRY\tabc"
+			],
+			[
+				"RE",
+				"REGISTRY_USERNAME\tabc"
+			],
+			[
+				"IMAGE",
+				"IMAGE_FULLNAME\tabc"
+			],
+			[
+				"IMAG",
+				"IMAGE_VERSION\tabc"
+			],
+			[
+				"IMA",
+				"IMAGE_DOMAIN\tabc"
+			],
+			[
+				"ima",
+				"IMAGE_NAME"
+			],
+			[
+				"dialog",
+				"dialogFormVisible\tabc"
+			],
+			[
+				"hand",
+				"handleAdd\tabc"
+			],
+			[
+				"hadnle",
+				"handleAdd\tabc"
+			],
+			[
+				"dia",
+				"dialogFormVisible\tabc"
+			],
+			[
+				"role",
+				"roleId\tabc"
+			],
+			[
+				"chcek",
+				"checkedKeys\tabc"
+			],
+			[
+				"checked",
+				"checkedKeys\tabc"
+			],
+			[
+				"dialo",
+				"dialogTreeVisible\tabc"
+			],
+			[
+				"pad",
+				"padding: 〔property〕"
+			],
+			[
+				"handleadd",
+				"handleAddRole\tabc"
+			],
+			[
+				"cons",
+				"console\tabc"
+			],
+			[
+				"defa",
+				"defaultCheckedKeys\tabc"
+			],
+			[
+				"node",
+				"nodeClick\tabc"
+			],
+			[
+				"permission",
+				"permissionTree\tabc"
+			],
+			[
+				"mar",
+				"margin\t(PanelGroup.vue)"
+			],
+			[
+				"margin",
+				"margin-top\tabc"
+			],
+			[
+				"scr",
+				"screenNum\tabc"
+			],
+			[
+				"auth",
+				"authorizationDate\tabc"
+			],
+			[
+				"detail",
+				"detailData\tabc"
+			],
+			[
+				"pading",
+				"padding-left: 〔property〕"
+			],
+			[
+				"remin",
+				"remindInstitutionName\tabc"
+			],
+			[
+				"label",
+				"label-width\tabc"
+			],
+			[
+				"syn",
+				"syncLoading\tabc"
+			],
+			[
+				"sy",
+				"syncLoading\tabc"
+			],
+			[
+				"authoriz",
+				"authorizedNum\tabc"
+			],
+			[
+				"updateu",
+				"updateUserForm\tabc"
+			],
+			[
+				"user",
+				"userForm\tabc"
+			],
+			[
+				"list",
+				"listUser\t(List.vue)"
+			],
+			[
+				"pa",
+				"pagination\tabc"
+			],
+			[
+				"com",
+				"components\t(List.vue)"
+			],
+			[
+				"handlele",
+				"handleDelete\tabc"
+			],
+			[
+				"ta",
+				"tableList\tabc"
+			],
+			[
+				"back",
+				"background-color: 〔property〕"
+			],
+			[
+				"ht",
+				"height: 〔property〕"
+			],
+			[
+				"op",
+				"openFullScreen\tabc"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"form",
+				"formName\tabc"
+			],
+			[
+				"ins",
+				"institution"
+			],
+			[
+				"lo",
+				"loading\tabc"
+			],
+			[
+				"numbe",
+				"numberForm\tabc"
+			],
+			[
+				"numb",
+				"numberForm\tabc"
+			],
+			[
+				"ru",
+				"rules"
+			],
+			[
+				"handleS",
+				"handleStop\tabc"
+			],
+			[
+				"TODO",
+				"TODO"
+			],
+			[
+				"parse",
+				"parseQuery\tabc"
+			],
+			[
+				"la",
+				"label\t(List.vue)"
+			],
+			[
+				"wi",
+				"width: 〔property〕"
+			],
+			[
+				"im",
+				"import\tabc"
+			],
+			[
+				"La",
+				"Layout.vue"
+			],
+			[
+				"sc",
+				"scoped\t(Login.vue)"
+			],
+			[
+				"import",
+				"import\tkeyword"
+			],
+			[
+				"compo",
+				"components\t(Home.vue)"
+			],
+			[
+				"c",
+				"components\t(Home.vue)"
+			],
+			[
+				"vue",
+				"vuec\tVue component"
+			],
+			[
+				"input",
+				"inputm\tinput - month"
+			],
+			[
+				"htm",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"ant",
+				"ant-design-vue\tabc"
+			],
+			[
+				"an",
+				"ant-design-vue"
+			],
+			[
+				"todo",
+				"todo-item"
+			],
+			[
+				"v",
+				"v-if\t<div v-if=\"\">"
+			],
+			[
+				"id",
+				"id=〔attribute〕"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"json",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"outli",
+				"Browse Mode: Outline (Right)"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"i",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"insert",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"outlin",
+				"Browse Mode: Outline (Right)"
+			],
+			[
+				"packageinstall",
+				"Package Control: Install Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"packagelist",
+				"Package Control: List Packages"
+			],
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"outline",
+				"Browse Mode: Outline (Right)"
+			],
+			[
+				"sn",
+				"Snippet: pre"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packagein",
+				"Package Control: Install Package"
+			],
+			[
+				"snip",
+				"Snippet: pre"
+			],
+			[
+				"snippet",
+				"Snippet: pre"
+			],
+			[
+				"code",
+				"Snippet: code"
+			],
+			[
+				"tmpl",
+				"Tmpl: Create python"
+			],
+			[
+				"smer",
+				"smerge"
+			],
+			[
+				"smerge",
+				"smerge"
+			],
+			[
+				"sm",
+				"smerge"
+			],
+			[
+				"sme",
+				"smerge"
+			],
+			[
+				"s",
+				"smerge"
+			],
+			[
+				"minus",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"out",
+				"Browse Mode: Outline (Right)"
+			],
+			[
+				"snippetma",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"snippetm",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packg",
+				"Package Control: List Packages"
+			],
+			[
+				"markdownediting: image",
+				"MarkdownEditing: New Inline Image"
+			],
+			[
+				"markdownediting: link",
+				"MarkdownEditing: New Inline Link"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdownp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"packge inst",
+				"Package Control: Install Package"
+			],
+			[
+				"catgs",
+				"CTags: Show Symbols (file)"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"delete spa",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"package install ",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimeterli",
+				"SublimeLinter: Show Line Errors"
+			],
+			[
+				"tmp",
+				"Tmpl: Create python"
+			],
+			[
+				"docker",
+				"Set Syntax: Dockerfile"
+			],
+			[
+				"docke",
+				"Set Syntax: Dockerfile"
+			],
+			[
+				"termi",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"find",
+				"Find: In Project"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublimelin",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"eslint",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"vuefor",
+				"VUEFormatter: Set `node` Path"
+			],
+			[
+				"vue",
+				"VUEFormatter: Set `node` Path"
+			],
+			[
+				"vuef",
+				"VUEFormatter: Set `node` Path"
+			],
+			[
+				"package ",
+				"Package Control: Disable Package"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"tern",
+				"Terminal: Open"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"package control in",
+				"Package Control: Install Package"
+			],
+			[
+				"package coni",
+				"Package Control: Install Package"
+			],
+			[
+				"pci",
+				"Preferences: Package Control Settings – Default"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 480.0,
+		"history":
+		[
+			"smerge"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/user/Desktop/source-files",
+		"/home/user/Desktop/source-files/springboot2",
+		"/home/user/Desktop/source-files/springboot2/password-ipcard"
+	],
+	"file_history":
+	[
+		"/home/user/Desktop/source-files/springboot2/password-ipcard/Main.java",
+		"/home/user/source-file.sublime-project",
+		"/home/user/Desktop/vue-element-admin/src/views/authorization/Add.vue",
+		"/home/user/Desktop/vue-element-admin/src/views/authorization/Details.vue",
+		"/home/user/Desktop/vue-element-admin/src/views/authorization/Remind.vue",
+		"/home/user/Desktop/vue-element-admin/src/views/authorization/List.vue",
+		"/home/user/Desktop/vue-element-admin/src/router/index.js",
+		"/home/user/Desktop/vue-element-admin/src/store/modules/user.js",
+		"/home/user/Desktop/vue-element-admin/src/views/user/List.vue",
+		"/home/user/Desktop/vue-element-admin/src/views/user/Add.vue",
+		"/home/user/Desktop/vue-element-admin/src/api/role.js",
+		"/home/user/Desktop/vue-element-admin/src/store/modules/permission.js",
+		"/home/user/Desktop/vue-element-admin/src/permission.js",
+		"/home/user/Desktop/vue-element-admin/src/views/user/Permission.vue",
+		"/home/user/Desktop/vue-element-admin/.env.development",
+		"/home/user/Desktop/vue-element-admin/.env.staging",
+		"/home/user/Desktop/vue-element-admin/setup.sh",
+		"/home/user/Desktop/source-files/springboot2/api版本控制/MVCConfig.java",
+		"/home/user/Desktop/source-files/springboot2/统一包装http返回体/APIResponse.java",
+		"/home/user/Desktop/source-files/springboot2/统一包装http返回体/APIExceptionAdvice.java",
+		"/home/user/Downloads/zhoutong-codesource/service-account/README.md",
+		"/home/user/Desktop/source-files/prometheus/readme.md",
+		"/home/user/Desktop/source-files/springboot2/springbootAdmin.md",
+		"/home/user/Desktop/monitor/springBootAppDown.yml",
+		"/home/user/Desktop/source-files/springboot2/docker-image.md",
+		"/home/user/IdeaProjects/crm-ses/Dockerfile",
+		"/home/user/Desktop/source-files/springboot2/actuator.md",
+		"/home/user/Desktop/source-files/springboot2/k8s.md",
+		"/home/user/Desktop/source-files/springboot2/统一包装http返回体/readme.md",
+		"/home/user/Desktop/source-files/springboot2/api版本控制/要考虑接口变迁的版本控制策略.md",
+		"/home/user/Desktop/source-files/mybatis/mybatis-plus分页排序.md",
+		"/home/user/Desktop/source-files/developmentTools/idea.md",
+		"/home/user/Desktop/source-files/mybatis/readme.md",
+		"/home/user/Desktop/source-files/springboot2/JSR303.md",
+		"/home/user/Desktop/source-files/springboot2/接口幂等.md",
+		"/home/user/Desktop/source-files/springboot2/使用事物的正确姿势.md",
+		"/home/user/Desktop/source-files/springboot2/code/ApplicationContextUtils.java",
+		"/home/user/Desktop/source-files/developmentTools/wrk.md",
+		"/home/user/Desktop/source-files/springboot2/线程池.md",
+		"/home/user/Desktop/source-files/springboot2/spring注册关闭钩子.md",
+		"/home/user/Desktop/source-files/springboot2/如何优雅的关闭springboot.md",
+		"/home/user/Desktop/source-files/log/application.yml",
+		"/home/user/Desktop/source-files/log/springboot-muti-env.md",
+		"/home/user/Desktop/source-files/log/application.properties",
+		"/home/user/Desktop/source-files/log/logback-spring.xml",
+		"/home/user/Desktop/source-files/docker安装/redis/install_redis.sh",
+		"/home/user/Desktop/source-files/redis/install/docker/install.sh",
+		"/home/user/Desktop/source-files/java/ThreadLocal.md",
+		"/home/user/Desktop/source-files/java/CopyOnWriteArrayList.md",
+		"/home/user/Desktop/source-files/java/LongAdder.md",
+		"/home/user/Desktop/source-files/java/apacheCommons.md",
+		"/home/user/Desktop/source-files/java/ThreadLocalRandom.md",
+		"/home/user/Desktop/azure.txt",
+		"/home/user/Desktop/source-files/java/StopWatch.md",
+		"/home/user/Desktop/source-files/java/forkJoinPool.md",
+		"/home/user/Desktop/01.md",
+		"/home/user/Desktop/1.sh",
+		"/home/user/Desktop/source-files/springboot2/spring-batch.md",
+		"/home/user/Desktop/source-files/mybatis/cache/secondLevelCache.md",
+		"/home/user/Desktop/source-files/mybatis/cache/firstLevelCache.md",
+		"/home/user/Desktop/source-files/redis/readme.md",
+		"/home/user/Desktop/source-files/redis/install/docker/redis.conf",
+		"/home/user/Desktop/source-files/Dockerfile/vue.md",
+		"/home/user/Desktop/source-files/redis/redis_standalone.conf",
+		"/home/user/Desktop/source-files/redis/redis.conf",
+		"/home/user/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/user/.config/sublime-text-3/Packages/GoogleDictionary/Default.sublime-keymap",
+		"/home/user/.config/sublime-text-3/Packages/User/GoogleDictionary.sublime-settings",
+		"/home/user/Desktop/source-files/redis/luaLock/lock.lua",
+		"/home/user/Desktop/source-files/redis/luaLock/RedisUtil.java",
+		"/home/user/Desktop/source-files/redis/luaLock/unlock.lua",
+		"/home/user/Desktop/source-files/redis/luaLock/use.java",
+		"/home/user/Desktop/source-files/springboot2/enums.md",
+		"/home/user/Desktop/source-files/redis/redisDistributedLock.md",
+		"/home/user/Downloads/test.csv",
+		"/home/user/Desktop/todo.sql",
+		"/home/user/Desktop/eclipse-workspace/demo/src/main/resources/schema_mysql.sql",
+		"/home/user/Desktop/eclipse-workspace/demo/pom.xml",
+		"/home/user/Desktop/eclipse-workspace/demo/src/main/resources/application.properties",
+		"/home/user/Desktop/source-files/developmentTools/vscode.md",
+		"/home/user/Desktop/source-files/developmentTools/chrome.md",
+		"/home/user/Desktop/source-files/developmentTools/sublime.md",
+		"/home/user/Desktop/source-files/springboot2/file_upload&download.md",
+		"/home/user/Desktop/source-files/mybatis/sql-time-plugin.md",
+		"/home/user/Desktop/source-files/gradle/非父子工程项目之间的依赖.md",
+		"/home/user/Desktop/source-files/gradle/gradle 跨工程引用.md",
+		"/home/user/Desktop/source-files/gradle/Gradle 引入本地定制 jar 包.md",
+		"/home/user/Desktop/source-files/gradle/eclipse中指定gradle的java home.md",
+		"/home/user/Desktop/source-files/gradle/灵铱公司－会员订单项目配置.md",
+		"/home/user/Desktop/source-files/gradle/readme.md",
+		"/home/user/Desktop/source-files/gradle/maven-publish插件.md",
+		"/home/user/Desktop/source-files/gradle/gradle构建脚本基础.md",
+		"/home/user/Desktop/source-files/.vuepress/config.js",
+		"/home/user/Desktop/source-files/package.json",
+		"/home/user/Desktop/source-files/nginx/install.md",
+		"/home/user/Desktop/source-files/nginx/nginx-configuration-combat.md",
+		"/home/user/Desktop/untitled.md",
+		"/home/user/Desktop/source-files/nginx/readme.md",
+		"/home/user/Desktop/source-files/springboot2/logback-spring.md",
+		"/home/user/Desktop/source-files/springboot2/获取当前激活的profile.md",
+		"/home/user/Desktop/source-files/springboot2/正确关闭springboot应用.md",
+		"/home/user/Desktop/source-files/springboot2/事物的传播行为.md",
+		"/home/user/Desktop/source-files/shell/read命令.md",
+		"/home/user/Desktop/source-files/shell/readme.md",
+		"/home/user/Desktop/source-files/shell/Bash脚本入门.md",
+		"/home/user/Desktop/source-files/shell/目录堆栈.md",
+		"/home/user/Desktop/source-files/springboot2/readme.md",
+		"/home/user/Desktop/source-files/springboot/springboot调优.md",
+		"/home/user/Desktop/source-files/java/optional.md",
+		"/home/user/Desktop/source-files/java/JavaStreamAPI .md",
+		"/home/user/Desktop/source-files/java/Java8Optional.md",
+		"/home/user/Desktop/source-files/java/readme.md",
+		"/home/user/Desktop/source-files/java/反射-提高扩展性.md",
+		"/home/user/.config/sublime-text-3/Packages/Alignment/Base File.sublime-settings",
+		"/home/user/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+		"/home/user/Desktop/source-files/shell/Bash行操作.md",
+		"/home/user/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/user/Desktop/source-files/shell/算数运算.md",
+		"/home/user/Desktop/source-files/shell/字符串操作.md",
+		"/home/user/Desktop/source-files/shell/变量.md",
+		"/home/user/Downloads/222.csv",
+		"/home/user/Desktop/source-files/docker安装/mysql/docker-install-mysql.md",
+		"/home/user/Desktop/source-files/设计模式/FactoryDesignPattern.md",
+		"/home/user/Downloads/111.csv",
+		"/home/user/Desktop/source-files/shell/引号和转义.md",
+		"/home/user/Desktop/source-files/shell/Bash的模式扩展.md",
+		"/home/user/Desktop/source-files/shell/基本语法.md",
+		"/home/user/Desktop/source-files/shell/Bash简介.md"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 160.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 56.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 156.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 156.0
+	},
+	"output.Terminus":
+	{
+		"height": 156.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 437.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/eslint.sublime-build",
+	"project": "source-file.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/hello-world/hello-world.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 356.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
