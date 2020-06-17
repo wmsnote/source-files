@@ -286,6 +286,19 @@ refence:
 https://zhuanlan.zhihu.com/p/129371044
 
 
+pipenv --python 3.8.3
+
+Warning: Python 3.8.3 was not found on your system…
+Neither 'pyenv' nor 'asdf' could be found to install Python.
+You can specify specific versions of Python with:
+$ pipenv --python path/to/python
+
+curl -L https://raw.github.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+
+
+
+
+
 
 
 
