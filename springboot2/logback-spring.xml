@@ -6,7 +6,7 @@
     <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
     <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
     <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter" />
-	
+
 	<springProperty scope="context" name="APP_NAME" source="spring.application.name" defaultValue="crm-ses"/>
 	<springProperty scope="context" name="LOG_PATH" source="logging.dir" defaultValue="./logs"/>
 
@@ -14,9 +14,8 @@
 	<property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
 	<property name="FILE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%15.15t] %-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
 	<property name="FILE_LOG_PATTERN1" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"/>
-	
 
-   
+
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>debug</level>
@@ -26,7 +25,7 @@
             <charset>UTF-8</charset>
         </encoder>
     </appender>
-    
+
     <appender name="DEBUG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${APP_NAME}/${APP_NAME}.debug.log</file>
         <encoder>
@@ -46,7 +45,7 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-    
+
     <appender name="INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${APP_NAME}/${APP_NAME}.info.log</file>
         <encoder>
@@ -66,7 +65,7 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-    
+
     <appender name="WARN_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${APP_NAME}/${APP_NAME}.warn.log</file>
         <encoder>
@@ -86,7 +85,7 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-    
+
     <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${APP_NAME}/${APP_NAME}.error.log</file>
         <encoder>
@@ -106,10 +105,10 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-    
 
 
-    
+
+
     <root level="info">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="DEBUG_FILE" />
@@ -167,4 +166,3 @@
 
 
 </configuration>
- 
