@@ -21,7 +21,8 @@ docker run --name mysql \
     -d mysql \
     --character-set-server=utf8mb4 \
     --collation-server=utf8mb4_unicode_ci \
-    --default-authentication-plugin=mysql_native_password
+    --default-authentication-plugin=mysql_native_password \
+    --secure_file_priv=/var/lib/mysql
 docker exec -it mysql /bin/bash
 mysql -u root -p
 use mysql
