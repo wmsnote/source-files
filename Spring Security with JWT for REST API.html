@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>wums</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="wums note">
+    <link rel="preload" href="/source-files/assets/css/0.styles.6eaab90e.css" as="style"><link rel="preload" href="/source-files/assets/js/app.35cc83e2.js" as="script"><link rel="preload" href="/source-files/assets/js/2.a20b4d8f.js" as="script"><link rel="preload" href="/source-files/assets/js/11.c1c59a5b.js" as="script"><link rel="prefetch" href="/source-files/assets/js/10.f69d7abe.js"><link rel="prefetch" href="/source-files/assets/js/100.57226434.js"><link rel="prefetch" href="/source-files/assets/js/101.c9375099.js"><link rel="prefetch" href="/source-files/assets/js/102.0ea5b320.js"><link rel="prefetch" href="/source-files/assets/js/103.ae18c3e1.js"><link rel="prefetch" href="/source-files/assets/js/104.1612d3c7.js"><link rel="prefetch" href="/source-files/assets/js/105.e0aa468f.js"><link rel="prefetch" href="/source-files/assets/js/106.23172296.js"><link rel="prefetch" href="/source-files/assets/js/107.21aaef51.js"><link rel="prefetch" href="/source-files/assets/js/108.3502ba7f.js"><link rel="prefetch" href="/source-files/assets/js/109.ab5190fe.js"><link rel="prefetch" href="/source-files/assets/js/110.92553c6f.js"><link rel="prefetch" href="/source-files/assets/js/111.c16c127e.js"><link rel="prefetch" href="/source-files/assets/js/112.e4c50a80.js"><link rel="prefetch" href="/source-files/assets/js/113.ef5309e3.js"><link rel="prefetch" href="/source-files/assets/js/114.0ded08c0.js"><link rel="prefetch" href="/source-files/assets/js/115.39d98001.js"><link rel="prefetch" href="/source-files/assets/js/116.0475c2ef.js"><link rel="prefetch" href="/source-files/assets/js/117.0d10bc2d.js"><link rel="prefetch" href="/source-files/assets/js/118.4e44751f.js"><link rel="prefetch" href="/source-files/assets/js/119.a2cacc15.js"><link rel="prefetch" href="/source-files/assets/js/12.97c63315.js"><link rel="prefetch" href="/source-files/assets/js/120.7449121c.js"><link rel="prefetch" href="/source-files/assets/js/121.38d68a94.js"><link rel="prefetch" href="/source-files/assets/js/122.163cc089.js"><link rel="prefetch" href="/source-files/assets/js/123.64c1b0c1.js"><link rel="prefetch" href="/source-files/assets/js/13.893892a0.js"><link rel="prefetch" href="/source-files/assets/js/14.0855c9fb.js"><link rel="prefetch" href="/source-files/assets/js/15.ae664444.js"><link rel="prefetch" href="/source-files/assets/js/16.2fd5452d.js"><link rel="prefetch" href="/source-files/assets/js/17.8766e8fa.js"><link rel="prefetch" href="/source-files/assets/js/18.9f5884b6.js"><link rel="prefetch" href="/source-files/assets/js/19.02b83a75.js"><link rel="prefetch" href="/source-files/assets/js/20.ce9cb766.js"><link rel="prefetch" href="/source-files/assets/js/21.170cbef9.js"><link rel="prefetch" href="/source-files/assets/js/22.7a6f4941.js"><link rel="prefetch" href="/source-files/assets/js/23.6773abd6.js"><link rel="prefetch" href="/source-files/assets/js/24.b0e6d846.js"><link rel="prefetch" href="/source-files/assets/js/25.812c921d.js"><link rel="prefetch" href="/source-files/assets/js/26.2822c7c2.js"><link rel="prefetch" href="/source-files/assets/js/27.f9f655fd.js"><link rel="prefetch" href="/source-files/assets/js/28.6742e54a.js"><link rel="prefetch" href="/source-files/assets/js/29.94755000.js"><link rel="prefetch" href="/source-files/assets/js/3.9bb35543.js"><link rel="prefetch" href="/source-files/assets/js/30.b8c0f9c9.js"><link rel="prefetch" href="/source-files/assets/js/31.dcc885b3.js"><link rel="prefetch" href="/source-files/assets/js/32.25c1211e.js"><link rel="prefetch" href="/source-files/assets/js/33.9a12f62c.js"><link rel="prefetch" href="/source-files/assets/js/34.c92b8460.js"><link rel="prefetch" href="/source-files/assets/js/35.743f0e46.js"><link rel="prefetch" href="/source-files/assets/js/36.e9c2ed44.js"><link rel="prefetch" href="/source-files/assets/js/37.13adb66f.js"><link rel="prefetch" href="/source-files/assets/js/38.c4110b80.js"><link rel="prefetch" href="/source-files/assets/js/39.be04fe98.js"><link rel="prefetch" href="/source-files/assets/js/4.9f590cad.js"><link rel="prefetch" href="/source-files/assets/js/40.6c2a6a91.js"><link rel="prefetch" href="/source-files/assets/js/41.f33df05a.js"><link rel="prefetch" href="/source-files/assets/js/42.0f4480b5.js"><link rel="prefetch" href="/source-files/assets/js/43.64c012f7.js"><link rel="prefetch" href="/source-files/assets/js/44.be4aff47.js"><link rel="prefetch" href="/source-files/assets/js/45.59011326.js"><link rel="prefetch" href="/source-files/assets/js/46.532b02ac.js"><link rel="prefetch" href="/source-files/assets/js/47.e27fcb9d.js"><link rel="prefetch" href="/source-files/assets/js/48.a54c0751.js"><link rel="prefetch" href="/source-files/assets/js/49.c982a9a5.js"><link rel="prefetch" href="/source-files/assets/js/5.62830c7d.js"><link rel="prefetch" href="/source-files/assets/js/50.af22eb6b.js"><link rel="prefetch" href="/source-files/assets/js/51.3c1ef3db.js"><link rel="prefetch" href="/source-files/assets/js/52.e2bd7c18.js"><link rel="prefetch" href="/source-files/assets/js/53.613502a4.js"><link rel="prefetch" href="/source-files/assets/js/54.508f1f81.js"><link rel="prefetch" href="/source-files/assets/js/55.af1b0d0a.js"><link rel="prefetch" href="/source-files/assets/js/56.2f3365d5.js"><link rel="prefetch" href="/source-files/assets/js/57.b1e19805.js"><link rel="prefetch" href="/source-files/assets/js/58.2b9111c1.js"><link rel="prefetch" href="/source-files/assets/js/59.592ccd50.js"><link rel="prefetch" href="/source-files/assets/js/6.74e76b69.js"><link rel="prefetch" href="/source-files/assets/js/60.a2e2837f.js"><link rel="prefetch" href="/source-files/assets/js/61.ef54c6c9.js"><link rel="prefetch" href="/source-files/assets/js/62.beabf063.js"><link rel="prefetch" href="/source-files/assets/js/63.1539a86a.js"><link rel="prefetch" href="/source-files/assets/js/64.36140f36.js"><link rel="prefetch" href="/source-files/assets/js/65.bb8d6e2b.js"><link rel="prefetch" href="/source-files/assets/js/66.7967a066.js"><link rel="prefetch" href="/source-files/assets/js/67.dae70144.js"><link rel="prefetch" href="/source-files/assets/js/68.29cb2ddf.js"><link rel="prefetch" href="/source-files/assets/js/69.5ff3144c.js"><link rel="prefetch" href="/source-files/assets/js/7.baaec696.js"><link rel="prefetch" href="/source-files/assets/js/70.3682e761.js"><link rel="prefetch" href="/source-files/assets/js/71.4eb1cff9.js"><link rel="prefetch" href="/source-files/assets/js/72.8908219b.js"><link rel="prefetch" href="/source-files/assets/js/73.d50de3b7.js"><link rel="prefetch" href="/source-files/assets/js/74.c537c7f0.js"><link rel="prefetch" href="/source-files/assets/js/75.a3c1017f.js"><link rel="prefetch" href="/source-files/assets/js/76.a278d618.js"><link rel="prefetch" href="/source-files/assets/js/77.a1a8dd4c.js"><link rel="prefetch" href="/source-files/assets/js/78.3d4bd60c.js"><link rel="prefetch" href="/source-files/assets/js/79.b1b34f31.js"><link rel="prefetch" href="/source-files/assets/js/8.e7a11f73.js"><link rel="prefetch" href="/source-files/assets/js/80.9ffd3233.js"><link rel="prefetch" href="/source-files/assets/js/81.7a358fed.js"><link rel="prefetch" href="/source-files/assets/js/82.ff6cc327.js"><link rel="prefetch" href="/source-files/assets/js/83.b4d52a53.js"><link rel="prefetch" href="/source-files/assets/js/84.5f28c046.js"><link rel="prefetch" href="/source-files/assets/js/85.e8366cf9.js"><link rel="prefetch" href="/source-files/assets/js/86.cabdabf7.js"><link rel="prefetch" href="/source-files/assets/js/87.5379c83f.js"><link rel="prefetch" href="/source-files/assets/js/88.e807284d.js"><link rel="prefetch" href="/source-files/assets/js/89.c0db6f56.js"><link rel="prefetch" href="/source-files/assets/js/9.17700aca.js"><link rel="prefetch" href="/source-files/assets/js/90.cdd0cca4.js"><link rel="prefetch" href="/source-files/assets/js/91.94302217.js"><link rel="prefetch" href="/source-files/assets/js/92.e0735f35.js"><link rel="prefetch" href="/source-files/assets/js/93.3a623434.js"><link rel="prefetch" href="/source-files/assets/js/94.00915283.js"><link rel="prefetch" href="/source-files/assets/js/95.e8033376.js"><link rel="prefetch" href="/source-files/assets/js/96.ee08d0fc.js"><link rel="prefetch" href="/source-files/assets/js/97.d8cd7e79.js"><link rel="prefetch" href="/source-files/assets/js/98.1bb8cc1a.js"><link rel="prefetch" href="/source-files/assets/js/99.800701e8.js">
+    <link rel="stylesheet" href="/source-files/assets/css/0.styles.6eaab90e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/source-files/" class="home-link router-link-active"><!----> <span class="site-name">wums</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/source-files/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://gitee.com/wmsnote/dashboard/wikis" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WiKi
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://gitee.com/wmsnote/source-files" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitEE
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/source-files/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://gitee.com/wmsnote/dashboard/wikis" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  WiKi
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://gitee.com/wmsnote/source-files" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitEE
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/shell/" class="sidebar-heading clickable open"><span>shell</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/source-files/shell/Bash简介.html" class="sidebar-link">Bash简介</a></li><li><a href="/source-files/shell/基本语法.html" class="sidebar-link">基本语法</a></li><li><a href="/source-files/shell/Bash的模式扩展.html" class="sidebar-link">Bash的模式扩展</a></li><li><a href="/source-files/shell/引号和转义.html" class="sidebar-link">引号和转义</a></li><li><a href="/source-files/shell/变量.html" class="sidebar-link">变量</a></li><li><a href="/source-files/shell/字符串操作.html" class="sidebar-link">字符串操作</a></li><li><a href="/source-files/shell/算数运算.html" class="sidebar-link">算数运算</a></li><li><a href="/source-files/shell/Bash行操作.html" class="sidebar-link">Bash行操作</a></li><li><a href="/source-files/shell/目录堆栈.html" class="sidebar-link">目录堆栈</a></li><li><a href="/source-files/shell/Bash脚本入门.html" class="sidebar-link">Bash脚本入门</a></li><li><a href="/source-files/shell/read命令.html" class="sidebar-link">read命令</a></li><li><a href="/source-files/shell/条件判断.html" class="sidebar-link">条件判断</a></li><li><a href="/source-files/shell/循环.html" class="sidebar-link">循环</a></li><li><a href="/source-files/shell/函数.html" class="sidebar-link">函数</a></li><li><a href="/source-files/shell/数组.html" class="sidebar-link">数组</a></li><li><a href="/source-files/shell/set.html" class="sidebar-link">set命令</a></li><li><a href="/source-files/shell/脚本除错.html" class="sidebar-link">脚本除错</a></li><li><a href="/source-files/shell/mktemp_and_trap.html" class="sidebar-link">mktemp命令和trap命令</a></li><li><a href="/source-files/shell/Bash启动环境.html" class="sidebar-link">Bash启动环境</a></li><li><a href="/source-files/shell/命令提示符.html" class="sidebar-link">命令提示符</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/设计模式/" class="sidebar-heading clickable"><span>设计模式</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/prometheus/" class="sidebar-heading clickable"><span>prometheus</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/travis-ci/" class="sidebar-heading clickable"><span>travis-ci教程</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/Dockerfile/" class="sidebar-heading clickable"><span>Dockerfile</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/java/" class="sidebar-heading clickable"><span>Java教程</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/springboot2/" class="sidebar-heading clickable"><span>SpringBoot2.x</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/source-files/nginx/" class="sidebar-heading clickable"><span>nginx</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>Spring Security with JWT for REST API</p> <p>Spring被认为是Java生态系统中值得信赖的框架，并被广泛使用。将Spring称为框架已不再有效，因为它更多地是涵盖各种框架的总称。这些框架之一是Spring Security，它是一个功能强大且可自定义的身份验证和授权框架。它被认为是确保基于Spring的应用程序安全的事实上的标准。</p> <p>尽管它很流行，但我必须承认，对于单页面应用程序，它的配置并不简单明了。我怀疑原因是它开始于面向MVC应用程序的框架，该框架在服务器端进行网页渲染，并且通信基于会话。</p> <p>如果后端基于Java和Spring，则使用Spring Security进行身份验证/授权并将其配置为无状态通信是有意义的。尽管有很多文章解释了如何完成此操作，但对我来说，第一次进行设置仍然令人沮丧，而且我不得不从多个来源阅读和总结信息。这就是为什么我决定写这篇文章的原因，在这里我将尝试总结并涵盖您在配置过程中可能遇到的所有必需的细微细节和缺点。</p> <h2 id="defining-terminology"><a href="#defining-terminology" class="header-anchor">#</a> Defining Terminology</h2> <p>在深入探讨技术细节之前，我想明确定义Spring Security上下文中使用的术语，以确保我们都说相同的语言。</p> <p>这些是我们需要解决的术语：</p> <ul><li>Authentication: 是指根据提供的凭据验证用户身份的过程。一个常见的示例是在登录网站时输入用户名和密码。</li> <li>Authorization: 是指假设用户已成功通过身份验证，确定用户是否具有执行特定操作或读取特定数据的适当权限的过程。</li> <li>Principle: 是指当前已认证的用户。</li> <li>Granted authority: 是指经过身份验证的用户的权限。</li> <li>Role: 是指经过身份验证的用户的一组权限。</li></ul> <p>##　Spring Security Architecture Overview</p> <p>在开始自定义配置之前，让我们首先讨论Spring Security身份验证如何在后台工作。</p> <p><img src="https://bs-uploads.toptal.io/blackfish-uploads/uploaded_file/file/412345/image-1602672495860.085-952930c83f53503d7e84d1371bec3775.png" alt=""></p> <h2 id="spring-security-filters-chain"><a href="#spring-security-filters-chain" class="header-anchor">#</a> Spring Security Filters Chain</h2> <p>当您将Spring Security框架添加到您的应用程序时，它会自动注册一个过滤器链来拦截所有传入的请求。该链由各种过滤器组成，每个过滤器处理一个特定的用例。</p> <p>例如：</p> <ul><li>根据配置检查请求的URL是否可公开访问。</li> <li>果是基于会话的身份验证，请检查用户是否已在当前会话中通过身份验证。</li> <li>检查用户是否有权执行请求的操作，依此类推。</li></ul> <p>我要提到的一个重要细节是，Spring Security过滤器以最低顺序注册，并且是第一个调用的过滤器。
+对于某些用例，如果要在其前面放置自定义过滤器，则需要在其顺序中添加填充。可以使用以下配置完成此操作：</p> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token attr-name">spring.security.filter.order</span><span class="token punctuation">=</span><span class="token attr-value">10</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>一旦将此配置添加到application.properties文件中，我们将在Spring Security过滤器前面有10个自定义过滤器的空间。</p> <h3 id="authenticationmanager-认证管理器"><a href="#authenticationmanager-认证管理器" class="header-anchor">#</a> AuthenticationManager 认证管理器</h3> <p>您可以将其AuthenticationManager视为可以在其中注册多个providers的协调器coordinator，并且根据请求类型，它将向正确的提供程序provider传递身份验证请求。</p> <h3 id="authenticationprovider-身份验证提供者"><a href="#authenticationprovider-身份验证提供者" class="header-anchor">#</a> AuthenticationProvider 身份验证提供者</h3> <p>AuthenticationProvider处理特定类型的身份验证。其界面仅提供两个功能：</p> <ul><li>authenticate 对请求执行身份验证。</li> <li>supports 检查此提供程序Provider是否支持指示的身份验证类型。</li></ul> <p>One important implementation of the interface that we are using in our sample project is <code>DaoAuthenticationProvider</code>从检索用户详细信息<code>UserDetailsService</code>。</p> <h3 id="userdetailss​​ervice"><a href="#userdetailss​​ervice" class="header-anchor">#</a> UserDetailsS​​ervice</h3> <p>UserDetailsService 在Spring文档中，它被描述为加载用户特定数据的核心接口。</p> <p>在大多数情况下，身份验证提供程序会根据凭据从数据库中提取用户身份信息，然后执行验证。因为这种用例非常普遍，所以Spring开发人员决定将其提取为单独的接口，从而公开单个功能：</p> <ul><li><code>loadUserByUsername</code>接受用户名作为参数并返回用户身份对象。</li></ul> <h2 id="使用jwt和spring-security进行身份验证"><a href="#使用jwt和spring-security进行身份验证" class="header-anchor">#</a> 使用JWT和Spring Security进行身份验证</h2> <p>在讨论了Spring Security框架的内部结构之后，我们将其配置为使用JWT令牌进行无状态认证。</p> <p>为了自定义Spring Security，我们需要一个<code>@EnableWebSecurity</code>在类路径中带有注解的配置类。另外，为了简化定制过程，框架公开了一个<code>WebSecurityConfigurerAdapter</code>类。我们将扩展此适配器并覆盖其两个功能，以便：</p> <ol><li>使用正确的提供程序配置身份验证管理器</li> <li>配置网络安全性（公共URL，私有URL，授权等）</li></ol> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@EnableWebSecurity</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SecurityConfig</span> <span class="token keyword">extends</span> <span class="token class-name">WebSecurityConfigurerAdapter</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">configure</span><span class="token punctuation">(</span><span class="token class-name">AuthenticationManagerBuilder</span> auth<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token comment">// TODO configure authentication manager</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">configure</span><span class="token punctuation">(</span><span class="token class-name">HttpSecurity</span> http<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token comment">// TODO configure web security</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>在示例应用程序中，我们将用户身份存储在users集合中的MongoDB数据库中。这些身份由User实体映射，它们的CRUD操作由UserRepoSpring Data存储库定义。</p> <p>现在，当我们接受身份验证请求时，我们需要使用提供的凭据从数据库中检索正确的身份，然后进行验证。为此，我们需要实现UserDetailsService接口，其定义如下：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">UserDetailsService</span> <span class="token punctuation">{</span>
+
+    <span class="token class-name">UserDetails</span> <span class="token function">loadUserByUsername</span><span class="token punctuation">(</span><span class="token class-name">String</span> username<span class="token punctuation">)</span>
+            <span class="token keyword">throws</span> <span class="token class-name">UsernameNotFoundException</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>在这里，我们可以看到需要返回实现该<code>UserDetails</code>接口的对象，而我们的User实体也实现了它。考虑到它仅公开单功能原型的事实，我们可以将其视为功能接口，并以lambda表达式形式提供实现。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@EnableWebSecurity</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SecurityConfig</span> <span class="token keyword">extends</span> <span class="token class-name">WebSecurityConfigurerAdapter</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">SecurityConfig</span><span class="token punctuation">(</span><span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>userRepo <span class="token operator">=</span> userRepo<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">configure</span><span class="token punctuation">(</span><span class="token class-name">AuthenticationManagerBuilder</span> auth<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        auth<span class="token punctuation">.</span><span class="token function">userDetailsService</span><span class="token punctuation">(</span>username <span class="token operator">-&gt;</span> userRepo
+            <span class="token punctuation">.</span><span class="token function">findByUsername</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">orElseThrow</span><span class="token punctuation">(</span>
+                <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token keyword">new</span> <span class="token class-name">UsernameNotFoundException</span><span class="token punctuation">(</span>
+                    <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&quot;User: %s, not found&quot;</span><span class="token punctuation">,</span> username<span class="token punctuation">)</span>
+                <span class="token punctuation">)</span>
+            <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Details omitted for brevity</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>在这里，<code>auth.userDetailsService</code>函数调用将<code>DaoAuthenticationProvider</code>使用我们的<code>UserDetailsService</code>接口实现来启动实例，并将其注册到身份验证管理器中。</p> <p>与身份验证提供程序一起，我们需要为身份验证管理器配置正确的密码编码架构，以用于凭据验证。为此，我们需要将<code>PasswordEncoder</code>接口的首选实现公开为bean。</p> <p>在我们的示例项目中，我们将使用bcrypt密码哈希算法。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@EnableWebSecurity</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SecurityConfig</span> <span class="token keyword">extends</span> <span class="token class-name">WebSecurityConfigurerAdapter</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">SecurityConfig</span><span class="token punctuation">(</span><span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>userRepo <span class="token operator">=</span> userRepo<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">configure</span><span class="token punctuation">(</span><span class="token class-name">AuthenticationManagerBuilder</span> auth<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        auth<span class="token punctuation">.</span><span class="token function">userDetailsService</span><span class="token punctuation">(</span>username <span class="token operator">-&gt;</span> userRepo
+            <span class="token punctuation">.</span><span class="token function">findByUsername</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">orElseThrow</span><span class="token punctuation">(</span>
+                <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token keyword">new</span> <span class="token class-name">UsernameNotFoundException</span><span class="token punctuation">(</span>
+                    <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">&quot;User: %s, not found&quot;</span><span class="token punctuation">,</span> username<span class="token punctuation">)</span>
+                <span class="token punctuation">)</span>
+            <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">PasswordEncoder</span> <span class="token function">passwordEncoder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">BCryptPasswordEncoder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Details omitted for brevity</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>配置了身份验证管理器后，我们现在需要配置Web安全。我们正在实现REST API，需要使用JWT令牌进行无状态身份验证；因此，我们需要设置以下选项：</p> <ul><li>启用CORS并禁用CSRF。</li> <li>将会话管理设置为无状态。</li> <li>设置未授权的请求异常处理程序。</li> <li>在端点上设置权限。</li> <li>添加JWT令牌过滤器。</li></ul> <p>此配置实现如下：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@EnableWebSecurity</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SecurityConfig</span> <span class="token keyword">extends</span> <span class="token class-name">WebSecurityConfigurerAdapter</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">JwtTokenFilter</span> jwtTokenFilter<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">SecurityConfig</span><span class="token punctuation">(</span><span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">,</span>
+                          <span class="token class-name">JwtTokenFilter</span> jwtTokenFilter<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>userRepo <span class="token operator">=</span> userRepo<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>jwtTokenFilter <span class="token operator">=</span> jwtTokenFilter<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Details omitted for brevity</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">configure</span><span class="token punctuation">(</span><span class="token class-name">HttpSecurity</span> http<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Enable CORS and disable CSRF</span>
+        http <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">cors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">csrf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">disable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Set session management to stateless</span>
+        http <span class="token operator">=</span> http
+            <span class="token punctuation">.</span><span class="token function">sessionManagement</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">sessionCreationPolicy</span><span class="token punctuation">(</span><span class="token class-name">SessionCreationPolicy</span><span class="token punctuation">.</span>STATELESS<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Set unauthorized requests exception handler</span>
+        http <span class="token operator">=</span> http
+            <span class="token punctuation">.</span><span class="token function">exceptionHandling</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">authenticationEntryPoint</span><span class="token punctuation">(</span>
+                <span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">,</span> ex<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">{</span>
+                    response<span class="token punctuation">.</span><span class="token function">sendError</span><span class="token punctuation">(</span>
+                        <span class="token class-name">HttpServletResponse</span><span class="token punctuation">.</span>SC_UNAUTHORIZED<span class="token punctuation">,</span>
+                        ex<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Set permissions on endpoints</span>
+        http<span class="token punctuation">.</span><span class="token function">authorizeRequests</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment">// Our public endpoints</span>
+            <span class="token punctuation">.</span><span class="token function">antMatchers</span><span class="token punctuation">(</span><span class="token string">&quot;/api/public/**&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">permitAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">antMatchers</span><span class="token punctuation">(</span><span class="token class-name">HttpMethod</span><span class="token punctuation">.</span>GET<span class="token punctuation">,</span> <span class="token string">&quot;/api/author/**&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">permitAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">antMatchers</span><span class="token punctuation">(</span><span class="token class-name">HttpMethod</span><span class="token punctuation">.</span>POST<span class="token punctuation">,</span> <span class="token string">&quot;/api/author/search&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">permitAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">antMatchers</span><span class="token punctuation">(</span><span class="token class-name">HttpMethod</span><span class="token punctuation">.</span>GET<span class="token punctuation">,</span> <span class="token string">&quot;/api/book/**&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">permitAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">antMatchers</span><span class="token punctuation">(</span><span class="token class-name">HttpMethod</span><span class="token punctuation">.</span>POST<span class="token punctuation">,</span> <span class="token string">&quot;/api/book/search&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">permitAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment">// Our private endpoints</span>
+            <span class="token punctuation">.</span><span class="token function">anyRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">authenticated</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token operator">/</span><span class="token operator">/</span> <span class="token class-name">Add</span> JWT token filter
+        http<span class="token punctuation">.</span><span class="token function">addFilterBefore</span><span class="token punctuation">(</span>
+            jwtTokenFilter<span class="token punctuation">,</span>
+            <span class="token class-name">UsernamePasswordAuthenticationFilter</span><span class="token punctuation">.</span><span class="token keyword">class</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token operator">/</span><span class="token operator">/</span> <span class="token class-name">Used</span> by spring security <span class="token keyword">if</span> CORS is enabled<span class="token punctuation">.</span>
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">CorsFilter</span> <span class="token function">corsFilter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">UrlBasedCorsConfigurationSource</span> source <span class="token operator">=</span>
+            <span class="token keyword">new</span> <span class="token class-name">UrlBasedCorsConfigurationSource</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">CorsConfiguration</span> config <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CorsConfiguration</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        config<span class="token punctuation">.</span><span class="token function">setAllowCredentials</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        config<span class="token punctuation">.</span><span class="token function">addAllowedOrigin</span><span class="token punctuation">(</span><span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        config<span class="token punctuation">.</span><span class="token function">addAllowedHeader</span><span class="token punctuation">(</span><span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        config<span class="token punctuation">.</span><span class="token function">addAllowedMethod</span><span class="token punctuation">(</span><span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        source<span class="token punctuation">.</span><span class="token function">registerCorsConfiguration</span><span class="token punctuation">(</span><span class="token string">&quot;/**&quot;</span><span class="token punctuation">,</span> config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">CorsFilter</span><span class="token punctuation">(</span>source<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br></div></div><p>请注意，我们<code>JwtTokenFilter</code>在Spring Security内部之前添加了<code>UsernamePasswordAuthenticationFilter</code>。之所以这样做，是因为此时我们需要访问用户身份以执行身份验证/授权，并且它的提取发生在基于提供的JWT令牌的JWT令牌过滤器内。它的实现如下：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">JwtTokenFilter</span> <span class="token keyword">extends</span> <span class="token class-name">OncePerRequestFilter</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">JwtTokenUtil</span> jwtTokenUtil<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">JwtTokenFilter</span><span class="token punctuation">(</span><span class="token class-name">JwtTokenUtil</span> jwtTokenUtil<span class="token punctuation">,</span>
+                          <span class="token class-name">UserRepo</span> userRepo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>jwtTokenUtil <span class="token operator">=</span> jwtTokenUtil<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>userRepo <span class="token operator">=</span> userRepo<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">doFilterInternal</span><span class="token punctuation">(</span><span class="token class-name">HttpServletRequest</span> request<span class="token punctuation">,</span>
+                                    <span class="token class-name">HttpServletResponse</span> response<span class="token punctuation">,</span>
+                                    <span class="token class-name">FilterChain</span> chain<span class="token punctuation">)</span>
+            <span class="token keyword">throws</span> <span class="token class-name">ServletException</span><span class="token punctuation">,</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Get authorization header and validate</span>
+        <span class="token keyword">final</span> <span class="token class-name">String</span> header <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">getHeader</span><span class="token punctuation">(</span><span class="token class-name">HttpHeaders</span><span class="token punctuation">.</span>AUTHORIZATION<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isEmpty</span><span class="token punctuation">(</span>header<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token operator">!</span>header<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">&quot;Bearer &quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            chain<span class="token punctuation">.</span><span class="token function">doFilter</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// Get jwt token and validate</span>
+        <span class="token keyword">final</span> <span class="token class-name">String</span> token <span class="token operator">=</span> header<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>jwtTokenUtil<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span>token<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            chain<span class="token punctuation">.</span><span class="token function">doFilter</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// Get user identity and set it on the spring security context</span>
+        <span class="token class-name">UserDetails</span> userDetails <span class="token operator">=</span> userRepo
+            <span class="token punctuation">.</span><span class="token function">findByUsername</span><span class="token punctuation">(</span>jwtTokenUtil<span class="token punctuation">.</span><span class="token function">getUsername</span><span class="token punctuation">(</span>token<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">orElse</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">UsernamePasswordAuthenticationToken</span>
+            authentication <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UsernamePasswordAuthenticationToken</span><span class="token punctuation">(</span>
+                userDetails<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+                userDetails <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">?</span>
+                    <span class="token class-name">List</span><span class="token punctuation">.</span><span class="token function">of</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> userDetails<span class="token punctuation">.</span><span class="token function">getAuthorities</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        authentication<span class="token punctuation">.</span><span class="token function">setDetails</span><span class="token punctuation">(</span>
+            <span class="token keyword">new</span> <span class="token class-name">WebAuthenticationDetailsSource</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">buildDetails</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">SecurityContextHolder</span><span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setAuthentication</span><span class="token punctuation">(</span>authentication<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        chain<span class="token punctuation">.</span><span class="token function">doFilter</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><p>在实现我们的登录API功能之前，我们需要多做一步-需要访问身份验证管理器。默认情况下，它不是公共可访问的，我们需要在配置类中将其显式公开为bean。</p> <p>可以按照以下步骤进行：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@EnableWebSecurity</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SecurityConfig</span> <span class="token keyword">extends</span> <span class="token class-name">WebSecurityConfigurerAdapter</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// Details omitted for brevity</span>
+
+    <span class="token annotation punctuation">@Override</span> <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">AuthenticationManager</span> <span class="token function">authenticationManagerBean</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">authenticationManagerBean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>现在，我们准备实现我们的登录API功能：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Api</span><span class="token punctuation">(</span>tags <span class="token operator">=</span> <span class="token string">&quot;Authentication&quot;</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@RestController</span> <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>path <span class="token operator">=</span> <span class="token string">&quot;api/public&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AuthApi</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">AuthenticationManager</span> authenticationManager<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">JwtTokenUtil</span> jwtTokenUtil<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">UserViewMapper</span> userViewMapper<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">AuthApi</span><span class="token punctuation">(</span><span class="token class-name">AuthenticationManager</span> authenticationManager<span class="token punctuation">,</span>
+                   <span class="token class-name">JwtTokenUtil</span> jwtTokenUtil<span class="token punctuation">,</span>
+                   <span class="token class-name">UserViewMapper</span> userViewMapper<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>authenticationManager <span class="token operator">=</span> authenticationManager<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>jwtTokenUtil <span class="token operator">=</span> jwtTokenUtil<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>userViewMapper <span class="token operator">=</span> userViewMapper<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@PostMapping</span><span class="token punctuation">(</span><span class="token string">&quot;login&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token class-name">ResponseEntity</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">UserView</span><span class="token punctuation">&gt;</span></span> <span class="token function">login</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestBody</span> <span class="token annotation punctuation">@Valid</span> <span class="token class-name">AuthRequest</span> request<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Authentication</span> authenticate <span class="token operator">=</span> authenticationManager
+                <span class="token punctuation">.</span><span class="token function">authenticate</span><span class="token punctuation">(</span>
+                    <span class="token keyword">new</span> <span class="token class-name">UsernamePasswordAuthenticationToken</span><span class="token punctuation">(</span>
+                        request<span class="token punctuation">.</span><span class="token function">getUsername</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> request<span class="token punctuation">.</span><span class="token function">getPassword</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">)</span>
+                <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">User</span><span class="token punctuation">)</span> authenticate<span class="token punctuation">.</span><span class="token function">getPrincipal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">return</span> <span class="token class-name">ResponseEntity</span><span class="token punctuation">.</span><span class="token function">ok</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span>
+                    <span class="token class-name">HttpHeaders</span><span class="token punctuation">.</span>AUTHORIZATION<span class="token punctuation">,</span>
+                    jwtTokenUtil<span class="token punctuation">.</span><span class="token function">generateAccessToken</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span>
+                <span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">body</span><span class="token punctuation">(</span>userViewMapper<span class="token punctuation">.</span><span class="token function">toUserView</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">BadCredentialsException</span> ex<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token class-name">ResponseEntity</span><span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token class-name">HttpStatus</span><span class="token punctuation">.</span>UNAUTHORIZED<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p>在这里，我们使用身份验证管理器验证提供的凭据，并在成功的情况下生成JWT令牌，并将其作为响应标头以及响应主体中的用户身份信息返回。</p> <h2 id="使用spring-security授权"><a href="#使用spring-security授权" class="header-anchor">#</a> 使用Spring Security授权</h2> <p>在上一节中，我们设置了身份验证过程并配置了公共/私有URL。这对于简单的应用程序可能就足够了，但是对于大多数实际用例，我们始终需要为用户提供基于角色的访问策略。在本章中，我们将解决此问题，并使用Spring Security框架设置基于角色的授权架构。</p> <p>在示例应用程序中，我们定义了以下三个角色：</p> <p>USER_ADMIN 允许我们管理应用程序用户。
+AUTHOR_ADMIN 允许我们管理作者。
+BOOK_ADMIN 允许我们管理书籍。
+现在，我们需要将它们应用于相应的URL：</p> <p>api/public 可公开访问。
+api/admin/user可以访问具有该USER_ADMIN角色的用户。
+api/author可以访问具有该AUTHOR_ADMIN角色的用户。
+api/book可以访问具有该BOOK_ADMIN角色的用户。
+Spring Security框架为我们提供了两个选项来设置授权模式：</p> <p>基于URL的配置
+基于注释的配置
+首先，让我们看看基于URL的配置如何工作。可以将其应用于Web安全配置，如下所示：</p> <p>@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {</p> <div class="language- extra-class"><pre><code>// Details omitted for brevity
+
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+    // Enable CORS and disable CSRF
+    http = http.cors().and().csrf().disable();
+
+    // Set session management to stateless
+    http = http
+        .sessionManagement()
+        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+        .and();
+
+    // Set unauthorized requests exception handler
+    http = http
+        .exceptionHandling()
+        .authenticationEntryPoint(
+            (request, response, ex) -&gt; {
+                response.sendError(
+                    HttpServletResponse.SC_UNAUTHORIZED,
+                    ex.getMessage()
+                );
+            }
+        )
+        .and();
+
+    // Set permissions on endpoints
+    http.authorizeRequests()
+        // Our public endpoints
+        .antMatchers(&quot;/api/public/**&quot;).permitAll()
+        .antMatchers(HttpMethod.GET, &quot;/api/author/**&quot;).permitAll()
+        .antMatchers(HttpMethod.POST, &quot;/api/author/search&quot;).permitAll()
+        .antMatchers(HttpMethod.GET, &quot;/api/book/**&quot;).permitAll()
+        .antMatchers(HttpMethod.POST, &quot;/api/book/search&quot;).permitAll()
+        // Our private endpoints
+        .antMatchers(&quot;/api/admin/user/**&quot;).hasRole(Role.USER_ADMIN)
+        .antMatchers(&quot;/api/author/**&quot;).hasRole(Role.AUTHOR_ADMIN)
+        .antMatchers(&quot;/api/book/**&quot;).hasRole(Role.BOOK_ADMIN)
+        .anyRequest().authenticated();
+
+    // Add JWT token filter
+    http.addFilterBefore(
+        jwtTokenFilter,
+        UsernamePasswordAuthenticationFilter.class
+    );
+}
+
+// Details omitted for brevity
+</code></pre></div><p>}
+如您所见，这种方法简单明了，但有一个缺点。应用程序中的授权模式可能很复杂，如果我们在一个地方定义所有规则，它将变得非常庞大，复杂且难以阅读。因此，我通常更喜欢使用基于注释的配置。</p> <p>Spring Security框架为Web安全定义了以下注释：</p> <p>@PreAuthorize支持Spring Expression Language，并用于在执行该方法之前提供基于表达式的访问控制。
+@PostAuthorize支持Spring表达式语言，用于在执行方法后提供基于表达式的访问控制（提供访问方法结果的能力）。
+@PreFilter支持Spring Expression Language，并用于根据我们定义的自定义安全规则在执行方法之前过滤集合或数组。
+@PostFilter支持Spring表达式语言，用于在根据我们定义的自定义安全规则执行方法后过滤返回的集合或数组（提供访问方法结果的能力）。
+@Secured不支持Spring Expression Language，用于指定方法中的角色列表。
+@RolesAllowed不支持Spring Expression Language，它是JSR 250的等效@Secured注释。
+这些注释默认情况下处于禁用状态，可以在我们的应用程序中启用，如下所示：</p> <p>@EnableWebSecurity
+@EnableGlobalMethodSecurity(
+securedEnabled = true,
+jsr250Enabled = true,
+prePostEnabled = true
+)
+public class SecurityConfig extends WebSecurityConfigurerAdapter {</p> <div class="language- extra-class"><pre><code>// Details omitted for brevity
+</code></pre></div><p>}</p> <p>securedEnabled = true启用@Secured注释。
+jsr250Enabled = true启用@RolesAllowed注释。
+prePostEnabled = true使@PreAuthorize，@PostAuthorize，@PreFilter，@PostFilter注释。</p> <p>启用它们后，我们可以在我们的API端点上实施基于角色的访问策略，如下所示：</p> <p>@Api(tags = &quot;UserAdmin&quot;)
+@RestController @RequestMapping(path = &quot;api/admin/user&quot;)
+@RolesAllowed(Role.USER_ADMIN)
+public class UserAdminApi {</p> <div class="language- extra-class"><pre><code>// Details omitted for brevity
+</code></pre></div><p>}</p> <p>@Api(tags = &quot;Author&quot;)
+@RestController @RequestMapping(path = &quot;api/author&quot;)
+public class AuthorApi {</p> <div class="language- extra-class"><pre><code>// Details omitted for brevity
+
+@RolesAllowed(Role.AUTHOR_ADMIN)
+@PostMapping
+public void create() { }
+
+@RolesAllowed(Role.AUTHOR_ADMIN)
+@PutMapping(&quot;{id}&quot;)
+public void edit() { }
+
+@RolesAllowed(Role.AUTHOR_ADMIN)
+@DeleteMapping(&quot;{id}&quot;)
+public void delete() { }
+
+@GetMapping(&quot;{id}&quot;)
+public void get() { }
+
+@GetMapping(&quot;{id}/book&quot;)
+public void getBooks() { }
+
+@PostMapping(&quot;search&quot;)
+public void search() { }
+</code></pre></div><p>}</p> <p>@Api(tags = &quot;Book&quot;)
+@RestController @RequestMapping(path = &quot;api/book&quot;)
+public class BookApi {</p> <div class="language- extra-class"><pre><code>// Details omitted for brevity
+
+@RolesAllowed(Role.BOOK_ADMIN)
+@PostMapping
+public BookView create() { }
+
+@RolesAllowed(Role.BOOK_ADMIN)
+@PutMapping(&quot;{id}&quot;)
+public void edit() { }
+
+@RolesAllowed(Role.BOOK_ADMIN)
+@DeleteMapping(&quot;{id}&quot;)
+public void delete() { }
+
+@GetMapping(&quot;{id}&quot;)
+public void get() { }
+
+@GetMapping(&quot;{id}/author&quot;)
+public void getAuthors() { }
+
+@PostMapping(&quot;search&quot;)
+public void search() { }
+</code></pre></div><p>}
+请注意，可以在类级别和方法级别上提供安全注释。</p> <p>演示的示例很简单，并不代表实际情况，但是Spring Security提供了丰富的注释集，如果选择使用它们，则可以处理复杂的授权模式。</p> <p>角色名称默认前缀
+在这一单独的小节中，我想强调一个使许多新用户感到困惑的细微细节。</p> <p>Spring Security框架区分两个术语：</p> <p>Authority 代表个人许可。
+Role 代表一组权限。
+两者都可以用一个单独的接口表示，GrantedAuthority然后在Spring Security批注中使用Spring Expression Language进行检查，如下所示：</p> <p>Authority：@PreAuthorize（“ hasAuthority（'EDIT_BOOK'）”）
+Role：@PreAuthorize（“ hasRole（'BOOK_ADMIN'）”）
+为了使这两个术语之间的区别更明确，Spring Security框架ROLE_默认为角色名称添加前缀。因此，BOOK_ADMIN它不会检查名为的角色，而是会检查ROLE_BOOK_ADMIN。</p> <p>就个人而言，我发现这种行为令人困惑，并且更喜欢在我的应用程序中禁用它。可以在Spring Security配置中禁用它，如下所示：</p> <p>@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {</p> <div class="language- extra-class"><pre><code>// Details omitted for brevity
+
+@Bean
+GrantedAuthorityDefaults grantedAuthorityDefaults() {
+    return new GrantedAuthorityDefaults(&quot;&quot;); // Remove the ROLE_ prefix
+}
+</code></pre></div><p>}</p> <p>https://github.com/Yoh0xFF/java-spring-security-example</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/15/2021, 6:31:11 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/source-files/assets/js/app.35cc83e2.js" defer></script><script src="/source-files/assets/js/2.a20b4d8f.js" defer></script><script src="/source-files/assets/js/11.c1c59a5b.js" defer></script>
+  </body>
+</html>
